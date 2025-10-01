@@ -19,7 +19,7 @@ hide:
 
     ---
 
-    Here are are the challenges I designed for several CTFs.
+    Here are are the challenges I designed for several CTF.
 
     [:octicons-arrow-right-24: Read the writeup](https://yxene.github.io/my-challenges/)
 
