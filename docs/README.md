@@ -13,7 +13,7 @@ hide:
 
     Here are some of my writeups for challenges from different platforms and CTF.
 
-    [:octicons-arrow-right-24: Read the writeup](https://yxene.github.io/writeups/)
+    [:octicons-arrow-right-24: Go to my writeups](https://yxene.github.io/writeups/)
 
 -   :material-flag-outline: __My Challenges__
 
@@ -21,6 +21,6 @@ hide:
 
     Here are are the challenges I designed for several CTF.
 
-    [:octicons-arrow-right-24: Read the writeup](https://yxene.github.io/my-challenges/)
+    [:octicons-arrow-right-24: Go to my challenges](https://yxene.github.io/my-challenges/)
 
 </div>
