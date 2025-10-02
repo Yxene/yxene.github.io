@@ -40,25 +40,25 @@ markdown_extensions:
 
 nav:
   - Home: README.md
-  - Writeupss:
-    - writeupss/index.md
+  - Writeups:
+    - writeups/index.md
     - TryHackMe:
-      - writeupss/tryhackme/index.md
-      - Valley: writeupss/tryhackme/valley/README.md
-      - RootMe: writeupss/tryhackme/rootme/README.md
-      - Cheese CTF: writeupss/tryhackme/cheese-ctf/README.md
-      - Agent Sudo: writeupss/tryhackme/agent-sudo/README.md
-      - Startup: writeupss/tryhackme/startup/README.md
+      - writeups/tryhackme/index.md
+      - Valley: writeups/tryhackme/valley/README.md
+      - RootMe: writeups/tryhackme/rootme/README.md
+      - Cheese CTF: writeups/tryhackme/cheese-ctf/README.md
+      - Agent Sudo: writeups/tryhackme/agent-sudo/README.md
+      - Startup: writeups/tryhackme/startup/README.md
     - FCSC:
-      - writeupss/fcsc/index.md
-      - Petite Frappe: writeupss/fcsc/petite-frappe/README.md
-      - Layer Cake: writeupss/fcsc/layer-cake/README.md
-      - Meme Generator: writeupss/fcsc/meme-generator/README.md
-      - CryptoLocker v1: writeupss/fcsc/cryptolocker-v1/README.md
+      - writeups/fcsc/index.md
+      - Petite Frappe: writeups/fcsc/petite-frappe/README.md
+      - Layer Cake: writeups/fcsc/layer-cake/README.md
+      - Meme Generator: writeups/fcsc/meme-generator/README.md
+      - CryptoLocker v1: writeups/fcsc/cryptolocker-v1/README.md
     - UnitedCTF:
-      - writeupss/unitedctf/index.md
-      - ARPacadabra: writeupss/unitedctf/arpacadabra/README.md
+      - writeups/unitedctf/index.md
+      - ARPacadabra: writeups/unitedctf/arpacadabra/README.md
     - CryptoHack:
-      - writeupss/cryptohack/index.md
-      - JSON in JSON: writeupss/cryptohack/json-in-json/README.md
+      - writeups/cryptohack/index.md
+      - JSON in JSON: writeups/cryptohack/json-in-json/README.md
 
