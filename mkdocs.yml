@@ -39,4 +39,25 @@ markdown_extensions:
 
 nav:
   - Home: README.md
+  - Writeupss:
+    - Overview: writeupss/README.md
+    - TryHackMe:
+      - Overwiew: writeupss/tryhackme/README.md
+      - Valley: writeupss/tryhackme/valley/README.md
+      - RootMe: writeupss/tryhackme/rootme/README.md
+      - Cheese CTF: writeupss/tryhackme/cheese-ctf/README.md
+      - Agent Sudo: writeupss/tryhackme/agent-sudo/README.md
+      - Startup: writeupss/tryhackme/startup/README.md
+    - FCSC:
+      - Overwiew: writeupss/fcsc/README.md
+      - Petite Frappe: writeupss/fcsc/petite-frappe/README.md
+      - Layer Cake: writeupss/fcsc/layer-cake/README.md
+      - Meme Generator: writeupss/fcsc/meme-generator/README.md
+      - CryptoLocker v1: writeupss/fcsc/cryptolocker-v1/README.md
+    - UnitedCTF:
+      - Overwiew: writeupss/unitedctf/README.md
+      - ARPacadabra: writeupss/unitedctf/arpacadabra/README.md
+    - CryptoHack:
+      - Overwiew: writeupss/cryptohack/README.md
+      - JSON in JSON: writeupss/cryptohack/json-in-json/README.md
 
