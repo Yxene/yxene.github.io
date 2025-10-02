@@ -3,13 +3,13 @@ hide:
   - toc
 ---
 
-# h0h0h0day CTF :santa:
+# h0h0h0day CTF 2024 :santa:
 
 ## Steganography
 
 <div class="grid cards" markdown>
 
--   :fontawesome-solid-compass: __Dialing To Merry Festivities__
+-   :material-phone-in-talk: __Dialing To Merry Festivities__
 
     ---
 
