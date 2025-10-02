@@ -41,29 +41,30 @@ markdown_extensions:
 nav:
   - Home: README.md
   - Writeups:
-    - writeups/index.md
+    - writeups/README.md
     - TryHackMe:
-      - writeups/tryhackme/index.md
+      - writeups/tryhackme/README.md
       - Valley: writeups/tryhackme/valley/README.md
       - RootMe: writeups/tryhackme/rootme/README.md
       - Cheese CTF: writeups/tryhackme/cheese-ctf/README.md
       - Agent Sudo: writeups/tryhackme/agent-sudo/README.md
       - Startup: writeups/tryhackme/startup/README.md
     - FCSC:
-      - writeups/fcsc/index.md
+      - writeups/fcsc/README.md
       - Petite Frappe: writeups/fcsc/petite-frappe/README.md
       - Layer Cake: writeups/fcsc/layer-cake/README.md
       - Meme Generator: writeups/fcsc/meme-generator/README.md
       - CryptoLocker v1: writeups/fcsc/cryptolocker-v1/README.md
     - UnitedCTF:
-      - writeups/unitedctf/index.md
+      - writeups/unitedctf/README.md
       - ARPacadabra: writeups/unitedctf/arpacadabra/README.md
     - CryptoHack:
-      - writeups/cryptohack/index.md
+      - writeups/cryptohack/README.md
       - JSON in JSON: writeups/cryptohack/json-in-json/README.md
   - My Challenges:
-    - my-challenges/index.md
+    - my-challenges/README.md
     - 24@CTF 2024:
+      - my-challenges/24hctf-2024/README.md
       - SteganOsint 1: my-challenges/24hctf-2024/steganosint-1/README.md
       - SteganOsint 2: my-challenges/24hctf-2024/steganosint-2/README.md
       - Sur les traces de Scofield 1: my-challenges/24hctf-2024/sur-les-traces-de-scofield-1/README.md
