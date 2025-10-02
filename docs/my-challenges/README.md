@@ -11,33 +11,9 @@ Each challenge includes:
 
 ---
 
-## 🔎 How to navigate
-
-- Use the sidebar to browse challenges by **competition** and **category**.
-- You can also search for keywords (e.g., "RSA", "XSS", "buffer overflow") using the search bar.
-
----
-
-## 📂 Structure
-
-Challenges are organized as follows:
-
-```
-Competition/
-    Category/
-        Challenge/
-            README.md (challenge statement)
-            solution/
-                README.md (official solution/writeup)
-                (potentially other useful files)
-            resources
-```
-
----
-
 ## 🚩 About this collection
 
-These challenges were created for CTF events such as **UnitedCTF**, **PolyPwn**, and more.
+These challenges were created for CTF events such as **[UnitedCTF](https://unitedctf.ca/)**, **[PolyPwn](https://pwn.polycyber.io/)**, and more.
 They are now freely available for practice, learning, and fun.
 
 Feel free to fork the repo, host the challenges locally, or use them for your own CTF training.
