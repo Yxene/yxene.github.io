@@ -1,7 +1,7 @@
 # 🏴‍☠️  My CTF Challenges Archive
 
 Welcome to my personal collection of CTF challenges!
-This repository gathers all the challenges I designed for various competitions, organized by **competition** and **category**.
+This repository gathers all the challenges I designed for various competitions, organized by **competition**.
 
 Each challenge includes:
 
