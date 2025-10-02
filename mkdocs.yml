@@ -76,9 +76,9 @@ nav:
       - Sur les traces de Scofield 2: my-challenges/24hctf-2024/sur-les-traces-de-scofield-2/README.md
       - Sur les traces de Scofield 3: my-challenges/24hctf-2024/sur-les-traces-de-scofield-3/README.md
     - UnitedCTF 2024:
-      - Programming:
-        - Fortune L33t3r 1: my-challenges/unitedctf-2024/programming/fortune-l33t3r-1/README.md
-        - Fortune L33t3r 2: my-challenges/unitedctf-2024/programming/fortune-l33t3r-2/README.md
+      - my-challenges/unitedctf-2024/README.md
+      - Fortune L33t3r 1: my-challenges/unitedctf-2024/fortune-l33t3r-1/README.md
+      - Fortune L33t3r 2: my-challenges/unitedctf-2024/fortune-l33t3r-2/README.md
     - Mois de la cyber 2024:
       - my-challenges/mois-de-la-cyber-2024/README.md
       - Katherin Stallings a disparu 1: my-challenges/mois-de-la-cyber-2024/katherin-stallings-a-disparu-1/README.md
