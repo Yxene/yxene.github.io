@@ -63,26 +63,26 @@ nav:
       - JSON in JSON: writeups/cryptohack/json-in-json/README.md
   - My Challenges:
     - my-challenges/index.md
-  - 24@CTF 2024:
-    - OSINT:
-      - SteganOsint 1: my-challenges/24hctf-2024/osint/steganosint-1/README.md
-      - SteganOsint 2: my-challenges/24hctf-2024/osint/steganosint-2/README.md
-      - Sur les traces de Scofield 1: my-challenges/24hctf-2024/osint/sur-les-traces-de-scofield-1/README.md
-      - Sur les traces de Scofield 2: my-challenges/24hctf-2024/osint/sur-les-traces-de-scofield-2/README.md
-      - Sur les traces de Scofield 3: my-challenges/24hctf-2024/osint/sur-les-traces-de-scofield-3/README.md
-  - UnitedCTF 2024:
-    - Programming:
-      - Fortune L33t3r 1: my-challenges/unitedctf-2024/programming/fortune-l33t3r-1/README.md
-      - Fortune L33t3r 2: my-challenges/unitedctf-2024/programming/fortune-l33t3r-2/README.md
-  - Mois de la cyber 2024:
-    - OSINT:
-      - Katherin Stallings a disparu 1: my-challenges/mois-de-la-cyber-2024/osint/katherin-stallings-a-disparu-1/README.md
-      - Katherin Stallings a disparu 2: my-challenges/mois-de-la-cyber-2024/osint/katherin-stallings-a-disparu-2/README.md
-      - Katherin Stallings a disparu 3: my-challenges/mois-de-la-cyber-2024/osint/katherin-stallings-a-disparu-3/README.md
-  - h0h0h0day CTF 2024:
-    - Steganography:
-      - Dialing To Merry Festivities: my-challenges/h0h0h0day-ctf-2024/steganography/dialing-to-merry-festivities/README.md
-  - PolyPwn 2025:
-    - Network:
-      - TitaNIC: my-challenges/polypwn-2025/network/titanic/README.md
+    - 24@CTF 2024:
+      - OSINT:
+        - SteganOsint 1: my-challenges/24hctf-2024/osint/steganosint-1/README.md
+        - SteganOsint 2: my-challenges/24hctf-2024/osint/steganosint-2/README.md
+        - Sur les traces de Scofield 1: my-challenges/24hctf-2024/osint/sur-les-traces-de-scofield-1/README.md
+        - Sur les traces de Scofield 2: my-challenges/24hctf-2024/osint/sur-les-traces-de-scofield-2/README.md
+        - Sur les traces de Scofield 3: my-challenges/24hctf-2024/osint/sur-les-traces-de-scofield-3/README.md
+    - UnitedCTF 2024:
+      - Programming:
+        - Fortune L33t3r 1: my-challenges/unitedctf-2024/programming/fortune-l33t3r-1/README.md
+        - Fortune L33t3r 2: my-challenges/unitedctf-2024/programming/fortune-l33t3r-2/README.md
+    - Mois de la cyber 2024:
+      - OSINT:
+        - Katherin Stallings a disparu 1: my-challenges/mois-de-la-cyber-2024/osint/katherin-stallings-a-disparu-1/README.md
+        - Katherin Stallings a disparu 2: my-challenges/mois-de-la-cyber-2024/osint/katherin-stallings-a-disparu-2/README.md
+        - Katherin Stallings a disparu 3: my-challenges/mois-de-la-cyber-2024/osint/katherin-stallings-a-disparu-3/README.md
+    - h0h0h0day CTF 2024:
+      - Steganography:
+        - Dialing To Merry Festivities: my-challenges/h0h0h0day-ctf-2024/steganography/dialing-to-merry-festivities/README.md
+    - PolyPwn 2025:
+      - Network:
+        - TitaNIC: my-challenges/polypwn-2025/network/titanic/README.md
 
