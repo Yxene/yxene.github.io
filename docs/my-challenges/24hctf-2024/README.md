@@ -33,7 +33,7 @@ hide:
 
     [:octicons-arrow-right-24: Read the description](sur-les-traces-de-scofield-3/README.md)
 
--   :material-ufo-outline: __SteganOsint 1__
+-   :material-file-hidden: __SteganOsint 1__
 
     ---
 
@@ -41,7 +41,7 @@ hide:
 
     [:octicons-arrow-right-24: Read the description](steganosint-1/README.md)
 
--   :material-chili-mild-outline: __SteganOsint 2__
+-   :material-folder-hidden: __SteganOsint 2__
 
     ---
 
