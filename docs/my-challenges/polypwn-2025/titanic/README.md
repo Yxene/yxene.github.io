@@ -1,6 +1,8 @@
 # TitaNIC
 
-**⚠️ Ce challenge n'est plus fonctionnel ⚠️**
+!!! warning
+
+    This challenge is no longer functional because essential parts are no longer deployed.
 
 [**`Yxène`**](https://github.com/Yxene)
 

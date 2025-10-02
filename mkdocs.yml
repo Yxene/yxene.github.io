@@ -4,6 +4,8 @@ theme:
   name: material
   icon:
     logo: fontawesome/regular/flag
+    admonition:
+      warning: material/alert
   palette:
 
     - media: "(prefers-color-scheme)"
@@ -32,6 +34,9 @@ theme:
     - navigation.indexes
 
 markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   - attr_list
   - md_in_html
   - pymdownx.emoji:
@@ -83,6 +88,6 @@ nav:
       - my-challenges/h0h0h0day-ctf-2024/README.md
       - Dialing To Merry Festivities: my-challenges/h0h0h0day-ctf-2024/dialing-to-merry-festivities/README.md
     - PolyPwn 2025:
-      - Network:
-        - TitaNIC: my-challenges/polypwn-2025/network/titanic/README.md
+      - my-challenges/polypwn-2025/README.md
+      - TitaNIC: my-challenges/polypwn-2025/titanic/README.md
 
