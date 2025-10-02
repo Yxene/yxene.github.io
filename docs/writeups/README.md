@@ -1,5 +1,7 @@
 # My CTF Writeups :material-file-edit:
 
+## Intro
+
 Welcome to my collection of Capture The Flag (CTF) writeups.
 Here you’ll find detailed explanations of the challenges I’ve solved.
 
@@ -13,7 +15,7 @@ The goal of these writeups is to:
 
 Whether you are a beginner curious about CTFs or an experienced player looking for alternative approaches, I hope you’ll find these writeups helpful.
 
----
+## Sections
 
 <div class="grid cards" markdown>
 
