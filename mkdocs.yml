@@ -80,8 +80,8 @@ nav:
         - Katherin Stallings a disparu 2: my-challenges/mois-de-la-cyber-2024/osint/katherin-stallings-a-disparu-2/README.md
         - Katherin Stallings a disparu 3: my-challenges/mois-de-la-cyber-2024/osint/katherin-stallings-a-disparu-3/README.md
     - h0h0h0day CTF 2024:
-      - Steganography:
-        - Dialing To Merry Festivities: my-challenges/h0h0h0day-ctf-2024/steganography/dialing-to-merry-festivities/README.md
+      - my-challenges/h0h0h0day-ctf-2024/README.md
+      - Dialing To Merry Festivities: my-challenges/h0h0h0day-ctf-2024/dialing-to-merry-festivities/README.md
     - PolyPwn 2025:
       - Network:
         - TitaNIC: my-challenges/polypwn-2025/network/titanic/README.md
