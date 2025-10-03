@@ -1,4 +1,5 @@
 site_name: Yxène
+site_url: https://yxene.github.io
 
 theme:
   name: material
