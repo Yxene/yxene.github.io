@@ -43,6 +43,13 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Yxene
+    - icon: simple/rootme
+      link: https://www.root-me.org/Yxene
+
 nav:
   - Home: README.md
   - Writeups:
