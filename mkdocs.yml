@@ -2,6 +2,7 @@ site_name: Yxène
 
 theme:
   name: material
+  custom_dir: overrides
   icon:
     logo: fontawesome/regular/flag
     admonition:
