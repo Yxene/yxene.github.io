@@ -25,6 +25,6 @@ hide:
 
 # Root Me Stats :simple-rootme:
 
---8<-- "snippets/stats.md"
+--8<-- "/docs/snippets/stats.md"
 
 </div>
