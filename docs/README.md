@@ -23,8 +23,10 @@ hide:
 
     [:octicons-arrow-right-24: Go to my challenges](https://yxene.github.io/my-challenges/)
 
+</div>
+
+
 # Root Me Stats :simple-rootme:
 
---8<-- "snippets/stats.html"
 
-</div>
+--8<-- "snippets/stats.md"
