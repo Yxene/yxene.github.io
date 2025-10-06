@@ -1,0 +1,3 @@
+- **Rank : 1337**
+- **Points: 1337 pts**
+- **Challenge solved: 1337**
