@@ -19,7 +19,7 @@ class RootMeAPIClient(object):
 
 
 def generate_embedded_file(stats: dict) -> str:
-  file_content = f"- **Rank :fontawesome-solid-ranking-star: :** {int(stats['position']):,} / +350,000\n- **Points :material-star-four-points: :** {int(stats['score']):,} pts\n- **Challenges solved :material-check: :** {len(stats['validations']):,}\n"
+  file_content = f"- :fontawesome-solid-ranking-star: **Rank :** {int(stats['position']):,} / +350,000\n- :material-star-four-points: **Points :** {int(stats['score']):,} pts\n- :material-check: **Challenges solved :** {len(stats['validations']):,}\n"
   return file_content
 
 def main():
