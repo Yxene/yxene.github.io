@@ -25,7 +25,7 @@ hide:
 
 </div>
 
-# CTF Results
+# CTF Results :octicons-trophy-24:
 
 ## Root Me Stats :simple-rootme:
 
@@ -33,52 +33,53 @@ __[Check my profile](https://www.root-me.org/Yxene)__
 
 --8<-- "snippets/stats.md"
 
-## Other results
+## Other results :material-podium:
 
-### Team Competitions
+### Team Competitions :fontawesome-solid-users:
 
 <div class="grid cards" markdown>
 
--   :myicons-nsec: __NorthSec 2025__
+-   __NorthSec 2025__ :myicons-nsec:{ .lg .middle }
 
     __1st student team__ (5th overall) among 92 teams :first_place:
 
--   :myicons-athack: __@Hack 2025__
+-   __@Hack 2025__ :myicons-athack:{ .lg .middle }
 
     3rd place out of +105 teams :third_place:
 
--   :myicons-cybersci: __CyberSci Regionals 2024__
+-   __CyberSci Regionals 2024__ :myicons-cybersci:{ .lg .middle }
 
-    1st team in Québec :first_place: & 2nd team in Canada :second_place:
+    1st team in Québec :first_place:
+    2nd team in Canada :second_place:
 
--   :myicons-hfctf: __HackFestCTF Classic 2024__
+-   __HackFestCTF Classic 2024__ :myicons-hfctf:{ .lg .middle }
 
     4th place among 35 teams
 
--   :myicons-athack: __@Hack 2024__
+-   __@Hack 2024__ :myicons-athack:{ .lg .middle }
 
     3rd place out of +92 teams :third_place:
 
--   :myicons-cybersci: __CyberSci Regionals 2023__
+-   __CyberSci Regionals 2023__ :myicons-cybersci:{ .lg .middle }
 
     2st team in Québec :second_place:
 
 </div>
 
 
-### Individual Competitions
+### Individual Competitions :fontawesome-solid-user:
 
 <div class="grid cards" markdown>
 
--   :myicons-fcsc: __FCSC 2025__
+-   __FCSC 2025__ :myicons-fcsc:{ .lg .middle }
 
     124th / 2,712 (Top 5 %)
 
--   :myicons-404ctf25: __404CTF 2025__
+-   __404CTF 2025__ :myicons-404ctf25:{ .lg .middle }
 
     83rd / 2,893 (Top 3 %)
 
--   :myicons-404ctf25:{ .lg .middle } __404CTF 2024__
+-   __404CTF 2024__ :myicons-404ctf25:{ .lg .middle }
 
     85rd / 3,271 (Top 3 %)
 
