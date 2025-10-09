@@ -3,7 +3,7 @@ hide:
   - toc
 ---
 
-# FCSC :rooster:
+# FCSC :myicons-fcsc:
 
 <div class="grid cards" markdown>
 

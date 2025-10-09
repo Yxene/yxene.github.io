@@ -25,7 +25,7 @@ Whether you are a beginner curious about CTFs or an experienced player looking f
 
     [:octicons-arrow-right-24: Go to TryHackMe section](tryhackme/README.md)
 
--   :rooster: __FCSC__
+-   :myicons-fcsc: __FCSC__
 
     ---
 
