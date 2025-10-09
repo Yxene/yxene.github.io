@@ -78,7 +78,7 @@ __[Check my profile](https://www.root-me.org/Yxene)__
 
     83rd / 2,893 (Top 3 %)
 
--   :myicons-404ctf25: __404CTF 2024__
+-   :myicons-404ctf25:{ .lg .middle } __404CTF 2024__
 
     85rd / 3,271 (Top 3 %)
 
