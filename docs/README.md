@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-# CTF Related :fontawesome-regular-flag:
+# CTF contributions :fontawesome-regular-flag:
 
 <div class="grid cards" markdown>
 
@@ -25,6 +25,61 @@ hide:
 
 </div>
 
-# Root Me Stats :simple-rootme:
+# CTF Results
+
+## Root Me Stats :simple-rootme:
+
+__[Check my profile](https://www.root-me.org/Yxene)__
 
 --8<-- "snippets/stats.md"
+
+## Other results
+
+### Team Competitions
+
+<div class="grid cards" markdown>
+
+-   :myicons-nsec: __NorthSec 2025__
+
+    __1st student team__ (5th overall) among 92 teams :first_place:
+
+-   :myicons-athack: __@Hack 2025__
+
+    3rd place out of +105 teams :third_place:
+
+-   :myicons-cybersci: __CyberSci Regionals 2024__
+
+    1st team in Québec :first_place: & 2nd team in Canada :second_place:
+
+-   :myicons-hfctf: __HackFestCTF Classic 2024__
+
+    4th place among 35 teams
+
+-   :myicons-athack: __@Hack 2024__
+
+    3rd place out of +92 teams :third_place:
+
+-   :myicons-cybersci: __CyberSci Regionals 2023__
+
+    2st team in Québec :second_place:
+
+</div>
+
+
+### Individual Competitions
+
+<div class="grid cards" markdown>
+
+-   :myicons-fcsc: __FCSC 2025__
+
+    124th / 2,712 (Top 5 %)
+
+-   :myicons-404ctf25: __404CTF 2025__
+
+    83rd / 2,893 (Top 3 %)
+
+-   :myicons-404ctf25: __404CTF 2024__
+
+    85rd / 3,271 (Top 3 %)
+
+</div>
