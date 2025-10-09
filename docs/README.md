@@ -71,7 +71,7 @@ __[Check my profile](https://www.root-me.org/Yxene)__
 
 <div class="grid cards" markdown>
 
--   __FCSC 2025__ :myicons-fcsc:{ .lg .middle }
+-   __FCSC 2025__ :myicons-fcsc:{ .lg .middle .right }
 
     124th / 2,712 (Top 5 %)
 
