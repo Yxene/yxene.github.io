@@ -63,7 +63,7 @@ __[Check my profile](https://www.root-me.org/Yxene)__
 
 -   __[CyberSci Regionals 2023](https://cybersecuritychallenge.ca/)__
 
-    2st team in Québec :second_place:
+    2nd team in Québec :second_place:
 
 </div>
 
@@ -82,6 +82,6 @@ __[Check my profile](https://www.root-me.org/Yxene)__
 
 -   __[404CTF 2024](https://www.404ctf.fr/)__
 
-    85rd / 3,271 (Top 3 %)
+    85th / 3,271 (Top 3 %)
 
 </div>
