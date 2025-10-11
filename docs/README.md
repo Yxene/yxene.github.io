@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-# CTF contributions :fontawesome-regular-flag:
+# CTF Contributions :fontawesome-regular-flag:
 
 <div class="grid cards" markdown>
 
