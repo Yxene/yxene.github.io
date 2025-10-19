@@ -1,5 +1,6 @@
 site_name: Yxène
 site_url: https://yxene.github.io
+repo_url: https://github.com/Yxene/yxene.github.io
 
 theme:
   name: material
@@ -8,6 +9,7 @@ theme:
     logo: fontawesome/regular/flag
     admonition:
       warning: material/alert
+    repo: fontawesome/brands/github
   palette:
 
     - media: "(prefers-color-scheme)"
