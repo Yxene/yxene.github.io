@@ -9,7 +9,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   :material-robot: __Disco Maghreb - Intro__
+-   :octicons-mcp-24: __Disco Maghreb - Intro__
 
     ---
 
@@ -17,7 +17,7 @@ hide:
 
     [:octicons-arrow-right-24: Read the description](disco-maghreb-1/README.md)
 
--   :material-robot: __Disco Maghreb - Catalogue__
+-   :octicons-mcp-24: __Disco Maghreb - Catalogue__
 
     ---
 
@@ -25,7 +25,7 @@ hide:
 
     [:octicons-arrow-right-24: Read the description](disco-maghreb-2/README.md)
 
--   :material-robot: __Disco Maghreb - Paroldle__
+-   :octicons-mcp-24: __Disco Maghreb - Paroldle__
 
     ---
 
