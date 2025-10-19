@@ -1,0 +1,2101 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+  
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://yxene.github.io/">
+      
+      
+      
+        <link rel="next" href="writeups/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+  <meta name="google-site-verification" content="VJf1OaBakvOCvOoJL6YNOuUg8M537Tc9NwpooNISmwA" />
+
+    
+      
+        <title>Yxène</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+      
+      
+    
+  
+  
+  <style>:root{--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M13%2014h-2V9h2m0%209h-2v-2h2M1%2021h22L12%202z%22/%3E%3C/svg%3E');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ctf-contributions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Yxène" class="md-header__button md-logo" aria-label="Yxène" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 24C48 10.7 37.3 0 24 0S0 10.7 0 24v464c0 13.3 10.7 24 24 24s24-10.7 24-24V388l80.3-20.1c41.1-10.3 84.6-5.5 122.5 13.4 44.2 22.1 95.5 24.8 141.7 7.4l34.7-13c12.5-4.7 20.8-16.6 20.8-30V66c0-23-24.2-38-44.8-27.7l-9.6 4.8c-46.3 23.2-100.8 23.2-147.1 0-35.1-17.6-75.4-22-113.5-12.5L48 52zm0 77.5 96.6-24.2c27-6.7 55.5-3.6 80.4 8.8 54.9 27.4 118.7 29.7 175 6.8v241.8l-24.4 9.1c-33.7 12.6-71.2 10.7-103.4-5.4-48.2-24.1-103.3-30.1-155.6-17.1L48 338.5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Yxène
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="amber"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Yxene/yxene.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="writeups/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Writeups
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="my-challenges/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  My Challenges
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Yxène" class="md-nav__button md-logo" aria-label="Yxène" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 24C48 10.7 37.3 0 24 0S0 10.7 0 24v464c0 13.3 10.7 24 24 24s24-10.7 24-24V388l80.3-20.1c41.1-10.3 84.6-5.5 122.5 13.4 44.2 22.1 95.5 24.8 141.7 7.4l34.7-13c12.5-4.7 20.8-16.6 20.8-30V66c0-23-24.2-38-44.8-27.7l-9.6 4.8c-46.3 23.2-100.8 23.2-147.1 0-35.1-17.6-75.4-22-113.5-12.5L48 52zm0 77.5 96.6-24.2c27-6.7 55.5-3.6 80.4 8.8 54.9 27.4 118.7 29.7 175 6.8v241.8l-24.4 9.1c-33.7 12.6-71.2 10.7-103.4-5.4-48.2-24.1-103.3-30.1-155.6-17.1L48 338.5z"/></svg>
+
+    </a>
+    Yxène
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Yxene/yxene.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="writeups/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Writeups
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Writeups
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="writeups/tryhackme/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    TryHackMe
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            TryHackMe
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="writeups/tryhackme/valley/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Valley
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="writeups/tryhackme/rootme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RootMe
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="writeups/tryhackme/cheese-ctf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cheese CTF
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="writeups/tryhackme/agent-sudo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Agent Sudo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="writeups/tryhackme/startup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Startup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="writeups/fcsc/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    FCSC
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            FCSC
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="writeups/fcsc/petite-frappe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Petite Frappe
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="writeups/fcsc/layer-cake/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Layer Cake
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="writeups/fcsc/meme-generator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Meme Generator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="writeups/fcsc/cryptolocker-v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CryptoLocker v1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="writeups/unitedctf/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    UnitedCTF
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            UnitedCTF
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="writeups/unitedctf/arpacadabra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ARPacadabra
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="writeups/cryptohack/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    CryptoHack
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            CryptoHack
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="writeups/cryptohack/json-in-json/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    JSON in JSON
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="my-challenges/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    My Challenges
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            My Challenges
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="my-challenges/24hctf-2024/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    24@CTF 2024
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            24@CTF 2024
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="my-challenges/24hctf-2024/steganosint-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SteganOsint 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="my-challenges/24hctf-2024/steganosint-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SteganOsint 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="my-challenges/24hctf-2024/sur-les-traces-de-scofield-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sur les traces de Scofield 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="my-challenges/24hctf-2024/sur-les-traces-de-scofield-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sur les traces de Scofield 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="my-challenges/24hctf-2024/sur-les-traces-de-scofield-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sur les traces de Scofield 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="my-challenges/unitedctf-2024/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    UnitedCTF 2024
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            UnitedCTF 2024
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="my-challenges/unitedctf-2024/fortune-l33t3r-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fortune L33t3r 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="my-challenges/unitedctf-2024/fortune-l33t3r-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fortune L33t3r 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="my-challenges/mois-de-la-cyber-2024/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Mois de la cyber 2024
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Mois de la cyber 2024
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="my-challenges/mois-de-la-cyber-2024/katherin-stallings-a-disparu-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Katherin Stallings a disparu 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="my-challenges/mois-de-la-cyber-2024/katherin-stallings-a-disparu-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Katherin Stallings a disparu 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="my-challenges/mois-de-la-cyber-2024/katherin-stallings-a-disparu-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Katherin Stallings a disparu 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="my-challenges/h0h0h0day-ctf-2024/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    h0h0h0day CTF 2024
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            h0h0h0day CTF 2024
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="my-challenges/h0h0h0day-ctf-2024/dialing-to-merry-festivities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dialing To Merry Festivities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="my-challenges/polypwn-2025/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    PolyPwn 2025
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            PolyPwn 2025
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="my-challenges/polypwn-2025/titanic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TitaNIC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="my-challenges/unitedctf-2025/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    UnitedCTF 2025
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            UnitedCTF 2025
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="my-challenges/unitedctf-2025/disco-maghreb-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Disco Maghreb - Intro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="my-challenges/unitedctf-2025/disco-maghreb-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Disco Maghreb - Catalogue
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="my-challenges/unitedctf-2025/disco-maghreb-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Disco Maghreb - Paroldle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+  
+  
+
+
+<h1 id="ctf-contributions">CTF Contributions <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 24C48 10.7 37.3 0 24 0S0 10.7 0 24v464c0 13.3 10.7 24 24 24s24-10.7 24-24V388l80.3-20.1c41.1-10.3 84.6-5.5 122.5 13.4 44.2 22.1 95.5 24.8 141.7 7.4l34.7-13c12.5-4.7 20.8-16.6 20.8-30V66c0-23-24.2-38-44.8-27.7l-9.6 4.8c-46.3 23.2-100.8 23.2-147.1 0-35.1-17.6-75.4-22-113.5-12.5L48 52zm0 77.5 96.6-24.2c27-6.7 55.5-3.6 80.4 8.8 54.9 27.4 118.7 29.7 175 6.8v241.8l-24.4 9.1c-33.7 12.6-71.2 10.7-103.4-5.4-48.2-24.1-103.3-30.1-155.6-17.1L48 338.5z"/></svg></span></h1>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-1.9l10-10V8l-6-6zm7 1.5L18.5 9H13zm7.1 9.5c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-2 1.8L12 20.9V23h2.1l6.1-6.1z"/></svg></span> <strong>My Writeups</strong></p>
+<hr />
+<p>Here are some of my writeups for challenges from different platforms and CTF.</p>
+<p><a href="https://yxene.github.io/writeups/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Go to my writeups</a></p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.36 6 .4 2H18v6h-3.36l-.4-2H7V6zM14 4H5v17h2v-7h5.6l.4 2h7V6h-5.6"/></svg></span> <strong>My Challenges</strong></p>
+<hr />
+<p>Here are are the challenges I designed for several CTF.</p>
+<p><a href="https://yxene.github.io/my-challenges/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Go to my challenges</a></p>
+</li>
+</ul>
+</div>
+<h1 id="ctf-results">CTF Results <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.09 10.121A5.25 5.25 0 0 1 1 5V3.75C1 2.784 1.784 2 2.75 2h2.364c.236-.586.81-1 1.48-1h10.812c.67 0 1.244.414 1.48 1h2.489c.966 0 1.75.784 1.75 1.75V5a5.25 5.25 0 0 1-4.219 5.149 7.01 7.01 0 0 1-4.644 5.478l.231 3.003.034.031c.079.065.303.203.836.282.838.124 1.637.81 1.637 1.807v.75h2.25a.75.75 0 0 1 0 1.5H4.75a.75.75 0 0 1 0-1.5H7v-.75c0-.996.8-1.683 1.637-1.807.533-.08.757-.217.836-.282l.034-.031.231-3.003A7.01 7.01 0 0 1 5.09 10.12ZM6.5 2.594V9a5.5 5.5 0 1 0 11 0V2.594a.094.094 0 0 0-.094-.094H6.594a.094.094 0 0 0-.094.094m4.717 13.363-.215 2.793-.001.021-.003.043a1 1 0 0 1-.022.147c-.05.237-.194.567-.553.86-.348.286-.853.5-1.566.605a.48.48 0 0 0-.274.136.26.26 0 0 0-.083.188v.75h7v-.75a.26.26 0 0 0-.083-.188.48.48 0 0 0-.274-.136c-.713-.105-1.218-.32-1.567-.604-.358-.294-.502-.624-.552-.86a1 1 0 0 1-.025-.19l-.001-.022-.215-2.793a7 7 0 0 1-1.566 0M19 8.578A3.75 3.75 0 0 0 21.625 5V3.75a.25.25 0 0 0-.25-.25H19ZM5 3.5H2.75a.25.25 0 0 0-.25.25V5A3.75 3.75 0 0 0 5 8.537Z"/></svg></span></h1>
+<h2 id="root-me-stats">Root Me Stats <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.364 9.897c0-.448-.029-.896-.096-1.325 0-.028-.009-.057-.009-.086-.582-3.785-3.452-6.894-7.228-7.723a.96.96 0 1 0-1.144 1.144v3.519c0 .057.028.114.076.152a.2.2 0 0 0 .105.029c.019 0 .048 0 .067-.01l1.411-.534a.7.7 0 0 0 .41.286v1.659c-.715.878-1.602 1.669-2.546 2.375l-1.077-2.499a.73.73 0 0 0 .333-.61.734.734 0 1 0-.734.734h.038l1.125 2.603c-.658.477-1.335.906-2.002 1.297l-3.204-.963a.16.16 0 0 0-.114.01l-.954.372a.734.734 0 1 0 .143.438c0-.028-.009-.057-.009-.086l.896-.352 2.794.839a33.5 33.5 0 0 1-4.873 2.231l-.171.057a.92.92 0 0 0-.553-.181h-.029a8.7 8.7 0 0 1-.677-3.366c0-.572.057-1.135.162-1.678H7.69a.726.726 0 0 0 .706.543.734.734 0 0 0 0-1.468.73.73 0 0 0-.706.543h-4.1c.772-3.137 3.251-5.644 6.455-6.388a.98.98 0 0 0 .82.467c.534 0 .963-.429.963-.963S11.399 0 10.865 0a.97.97 0 0 0-.944.763c-4.205.953-7.285 4.739-7.285 9.125a9.3 9.3 0 0 0 .735 3.642.967.967 0 0 0 .372 1.602v3.757c0 .067.019.134.057.191l.21.143 2.851 2.012v2.403c0 .2.162.362.362.362h9.535c.2 0 .362-.162.362-.362v-2.403l2.861-2.012.21-.153a.34.34 0 0 0 .057-.19v-3.786a.958.958 0 0 0 .353-1.535 9 9 0 0 0 .763-3.662m-1.383 3.366h-.086a.96.96 0 0 0-.334 1.86v3.509l-3.003 2.117a.36.36 0 0 0-.153.295v2.022a.21.21 0 0 1-.21.209H15.08a.21.21 0 0 1-.21-.209v-.725c0-.191-.133-.362-.324-.382a.367.367 0 0 0-.401.363v.753c0 .115-.095.21-.209.21h-1.364a.21.21 0 0 1-.21-.21v-1.116c0-.19-.133-.362-.324-.381a.366.366 0 0 0-.4.362v1.145a.21.21 0 0 1-.21.209h-1.364a.21.21 0 0 1-.209-.209v-.744c0-.191-.134-.362-.325-.382a.366.366 0 0 0-.4.363v.753c0 .115-.095.21-.21.21H7.805a.21.21 0 0 1-.21-.21v-2.021a.37.37 0 0 0-.153-.296l-2.994-2.117v-3.547a.96.96 0 0 0 .563-.877c0-.057-.01-.114-.019-.172.381-.133 3.289-1.173 6.15-2.956 3.871-2.412 6.017-5.149 6.264-7.961a8.74 8.74 0 0 1 3.157 5.473c-.048 4.777-8.372 7.723-8.458 7.752-.019.009-.067.019-.105.038-.105-.019-.21-.038-.324-.057-.076-.019-.162-.029-.239-.048-.124-.019-.247-.048-.371-.076-.02-.01-.048-.01-.067-.01l-.143-.028c-.057-.01-.115-.029-.172-.039a5 5 0 0 1-.391-.095c-.238-.057-.467-.124-.696-.181-.219-.067-.448-.124-.658-.191H8.92a6 6 0 0 1-.467-.152 1 1 0 0 0-.153-.048c-.076-.029-.143-.048-.209-.067a3 3 0 0 1-.344-.124h-.009a6 6 0 0 1-.458-.171c-.143-.058-.267-.105-.362-.143-.096-.048-.181-.077-.229-.105-.057-.029-.086-.038-.086-.038s.019.028.057.066c.038.048.096.115.181.191.077.076.182.172.306.267s.267.2.419.305h.01a2.1 2.1 0 0 0-.096.61c0 1.097.897 1.993 1.993 1.993.849 0 1.573-.534 1.86-1.287l.295.029c.172.009.334.009.486.009.01 0 .019.01.029.01l1.611 1.64c.41.41 1.049.477 1.526.162l2.517-1.411a.8.8 0 0 0 .363-.658v-2.899c.972-.772 1.85-1.688 2.422-2.727a8.1 8.1 0 0 1-.601 2.145m-7.799 5.87-.002-.002q-.002-.003-.008-.003l-.013-.009-.003-.002a.03.03 0 0 1-.013-.009c-.01 0-.019-.009-.029-.009-.009 0-.019-.01-.019-.01-.009 0-.019 0-.028-.009h-.115c-.009 0-.019 0-.028.009-.01 0-.019.01-.019.01-.01 0-.019.009-.029.009-.009 0-.019.01-.029.02-.009 0-.009.009-.019.009l-.038.038-.772.963a.276.276 0 0 0 .219.448.28.28 0 0 0 .219-.104l.01-.01a.7.7 0 0 1 1.097 0l.009.01a.287.287 0 0 0 .391.047.277.277 0 0 0 .048-.391l-.782-.953c-.01-.01-.019-.019-.019-.029l-.019-.019zm-1.622-2.265c-.038.076-.095.152-.143.219a1.256 1.256 0 0 1-1.907 0 1.23 1.23 0 0 1-.295-.81c0-.077.009-.144.019-.22.152.076.314.153.476.229.22.095.449.191.687.267a9 9 0 0 0 1.163.315m-6.503-2.184a.5.5 0 0 1-.305-.114.449.449 0 0 1-.133-.506.47.47 0 0 1 .429-.295c.085 0 .162.028.229.067a.46.46 0 0 1 .228.4.46.46 0 0 1-.066.229.42.42 0 0 1-.382.219m16.21-.181a.48.48 0 0 1-.362.181.47.47 0 0 1-.334-.143.47.47 0 0 1-.124-.315c0-.2.124-.371.305-.429a.5.5 0 0 1 .162-.028.48.48 0 0 1 .458.372.3.3 0 0 1 .009.095.7.7 0 0 1-.114.267m-5.845-9.869c0 .029.009.048.009.067l-1.163.438V1.897a.92.92 0 0 0 .658-.457 8.5 8.5 0 0 1 2.823 1.201c-.01 1.411-.554 2.708-1.412 3.881V5.34a.73.73 0 0 0 .544-.706c0-.4-.324-.734-.734-.734a.74.74 0 0 0-.725.734m-3.48-1.735a.734.734 0 0 0-.735.696l-1.458.534a.19.19 0 0 0-.134.181v.925H7.442a.73.73 0 0 0-.705-.544.735.735 0 1 0 0 1.469.73.73 0 0 0 .705-.544h1.364a.19.19 0 0 0 .19-.19v-.983l1.288-.476c.124.238.372.4.648.4a.734.734 0 0 0 .734-.734.725.725 0 0 0-.724-.734m-.41-2.241a.46.46 0 0 1 .343-.153.468.468 0 1 1-.258.859.48.48 0 0 1-.209-.382.45.45 0 0 1 .124-.324m2.097.305a.467.467 0 0 1 .801-.324.462.462 0 0 1-.076.696.43.43 0 0 1-.267.086.45.45 0 0 1-.458-.458"/></svg></span></h2>
+<p><strong><a href="https://www.root-me.org/Yxene">Check my profile</a></strong></p>
+<ul>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M321.8 54.1 298.2 6.3c-3.9-8.3-16.1-8.6-20.4 0l-23.6 47.8-52.3 7.5c-9.3 1.4-13.3 12.9-6.4 19.8l38 37-9 52.1c-1.4 9.3 8.2 16.5 16.8 12.2l46.9-24.8 46.6 24.4c8.6 4.3 18.3-2.9 16.8-12.2l-9-52.1 38-36.6c6.8-6.8 2.9-18.3-6.4-19.8l-52.3-7.5zM256 256c-26.5 0-48 21.5-48 48v160c0 26.5 21.5 48 48 48h64c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zM48 320c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48h64c26.5 0 48-21.5 48-48v-96c0-26.5-21.5-48-48-48zm368 112v32c0 26.5 21.5 48 48 48h64c26.5 0 48-21.5 48-48v-32c0-26.5-21.5-48-48-48h-64c-26.5 0-48 21.5-48 48"/></svg></span> <strong>Rank :</strong> 1,379 / +350,000</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1 9 9l-8 3 8 3 3 8 3-8 8-3-8-3z"/></svg></span> <strong>Points :</strong> 5,090 pts</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span> <strong>Challenges solved :</strong> 232 challenges</li>
+</ul>
+<h2 id="other-results">Other results <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 7.09 2.45 1.49-.65-2.81L16 3.89l-2.89-.25L12 1l-1.13 2.64L8 3.89l2.18 1.88-.68 2.81zm-8 6 2.45 1.49-.65-2.81L8 9.89l-2.89-.25L4 7 2.87 9.64 0 9.89l2.18 1.88-.68 2.81zm16-3 2.45 1.49-.65-2.81L24 6.89l-2.89-.25L20 4l-1.13 2.64-2.87.25 2.18 1.88-.68 2.81zM15 23H9V10h6zm-8 0H1v-6h6zm16 0h-6V13h6z"/></svg></span></h2>
+<h3 id="team-competitions">Team Competitions <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M320 16a104 104 0 1 1 0 208 104 104 0 1 1 0-208M96 88a72 72 0 1 1 0 144 72 72 0 1 1 0-144M0 416c0-70.7 57.3-128 128-128 12.8 0 25.2 1.9 36.9 5.4C132 330.2 112 378.8 112 432v16c0 11.4 2.4 22.2 6.7 32H32c-17.7 0-32-14.3-32-32zm521.3 64c4.3-9.8 6.7-20.6 6.7-32v-16c0-53.2-20-101.8-52.9-138.6 11.7-3.5 24.1-5.4 36.9-5.4 70.7 0 128 57.3 128 128v32c0 17.7-14.3 32-32 32zM472 160a72 72 0 1 1 144 0 72 72 0 1 1-144 0M160 432c0-88.4 71.6-160 160-160s160 71.6 160 160v16c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32z"/></svg></span></h3>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong><a href="https://nsec.io/">NorthSec 2025</a></strong> <span class="twemoji lg middle"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" style="enable-background:new 0 0 185 188;" xml:space="preserve" viewBox="1 1.95 144.2 57.98"> <style type="text/css">	.st1{fill:#1A1A1A;} 	.st2{fill:#1C75BC;}</style>    <g> 	<path class="st1" d="M138.1,44.5c-2.9,2.8-5.7,4.5-9.6,4.5c-6.5,0-10.7-5.2-10.7-11.6v-0.2c0-6.2,4.2-11.4,10.2-11.4   c4.2,0,6.9,1.8,9.6,4.6l7.3-7.9c-1.2-1.2-2.3-2.4-3.6-3.3c0.1-2.1,0.5-4.1,0.2-6c-1.1-7-7.7-11.7-14.9-11.2c-6.8,0.5-10.4,4-12,8.1   c-1.2,3-0.3,6.5-0.6,10.3c-2.7,2.2-4.8,5.1-6.1,8.4c-2.7-7.6-8.8-13.3-18.9-13.3c-11.8,0-20.2,9.2-20.7,20.6   c-2.5-1.8-5.8-3.1-8.7-4c-4.8-1.6-9.1-2.9-9.1-5.4v-0.2c0-1.7,1.6-3.1,4.7-3.1c3.3,0,7.7,1.6,12.1,4.1l4.8-8.7   c-4.9-3.3-11-5.2-16.7-5.2c-6.8,0-12.6,2.9-15.1,8.2c1.4,2.5,2.1,5.6,2.1,9.1v5.5c2.6,2.6,6.4,3.9,10,5c4.9,1.5,9.2,2.4,9.2,5.2   v0.2c0,2-1.6,3.4-5.4,3.4c-4.1,0-9.1-1.8-13.8-5.2v11.7c4.4,2.2,9.2,3.2,13.5,3.2c7.8,0,14.2-3,16.3-9.3c3.9,5.4,10.3,8.5,17.9,8.5   s13.3-3,17.2-7.9l-6.8-6c-3.3,3.1-6.2,4.3-10.2,4.3c-5.4,0-9.1-2.8-10.3-8.3h26.5c1.7,10.1,10.3,17.8,21.5,17.8   c8.4,0,13.1-3.2,17.2-7.7L138.1,44.5z M135,16.3c-2-0.6-4.3-0.9-6.9-0.9c-2.9,0-5.7,0.5-8.1,1.4C119.1,5.7,135.7,6.2,135,16.3z    M79.7,33.9c1-5.4,4.1-8.9,9.1-8.9c5,0,8.2,3.6,8.8,8.9H79.7z"/> 	<path d="M27.6,58.2V34.8c0-5.7-2.7-8.5-7.2-8.5S13,29.1,13,34.8v23.4H1V19.4l11.9-6v8.7c2.8-3.6,6.2-6.7,12.3-6.7   c9,0,14.3,6,14.3,15.7v27.2L27.6,58.2L27.6,58.2z" class="st1"/> </g></svg></span></p>
+<p><strong>1st student team</strong> (5th overall) among 92 teams <img alt="🥇" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f947.svg" title=":first_place:" /></p>
+</li>
+<li>
+<p><strong><a href="https://www.athackctf.com/">@Hack 2025</a></strong> <span class="twemoji lg middle"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 505.2 207.7" style="enable-background:new 0 0 505.2 207.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#4440A0;}
+	.st1{fill:#F5DC38;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#F5DC38;}
+</style>
+<polygon id="bg" class="st0" points="501,22.3 501,13.4 492.6,13.4 492.6,4.5 484.2,4.5 484.2,0 335.5,0 316.8,0 280.9,0 262.3,0 
+	207.7,0 21.5,0 21.5,4.5 13.1,4.5 13.1,13.4 4.6,13.4 4.6,22.3 0,22.3 0,184.8 4.6,184.8 4.6,193.7 13.1,193.7 13.1,202.6 
+	21.5,202.6 21.5,207.7 207.3,207.7 261.3,207.7 282.6,207.7 334.6,207.7 336.7,207.7 405.9,207.7 405.9,201.9 414.3,201.9 
+	414.3,193 422.7,193 422.7,184.8 336.5,184.8 334.4,184.8 282.4,184.8 261.4,184.8 207.3,184.8 43.5,184.8 43.5,180.8 35.1,180.8 
+	35.1,184.8 35.1,184.8 35.1,180.8 35.1,180.8 35.1,171.8 35.1,171.8 35.1,171.8 26.7,171.8 26.7,162.9 21.7,162.9 21.7,44 26.7,44 
+	26.7,35.1 35.1,35.1 35.1,26.2 43.5,26.2 43.5,22.9 207.6,22.9 262.3,22.9 281.1,22.9 317,22.9 335.7,22.9 463.1,22.9 463.1,26 
+	471.6,26 471.6,34.9 480,34.9 480,43.8 483.6,43.8 483.6,170.2 478,170.2 478,179.1 473.8,179.1 469.6,179.1 469.6,184.8 462,184.8 
+	462,175.9 461.9,175.9 461.9,167 470.3,167 470.3,158.1 475,158.1 475,54.1 470.9,54.1 470.9,45.2 462.5,45.2 462.5,36.3 
+	454.1,36.3 454.1,31.7 317.1,31.7 317.1,31.9 281.1,31.9 281.1,31.7 207.6,31.7 51.9,31.7 51.9,36.2 43.5,36.2 43.5,45.1 35.1,45.1 
+	35.1,54 30.3,54 30.3,152.6 35.1,152.6 35.1,161.5 43.5,161.5 43.5,170.4 51.9,170.4 51.9,175.7 207.4,175.7 274.9,175.7 
+	274.9,175.9 349.9,175.9 349.9,175.7 440.3,175.7 440.3,207.7 483.3,207.7 483.3,201.9 491.7,201.9 491.7,194.5 492.6,194.5 
+	492.6,193 500.1,193 500.1,184.1 505.2,184.1 505.2,22.3 "/>
+<polygon id="outline_right" class="st1" points="467.1,100.8 467.1,150.9 461.7,150.9 461.7,153.7 461.7,154.1 461.7,159.9 
+	456.4,159.9 453.2,159.9 453.2,163.1 453.2,168.8 318.9,168.8 318.9,172 456.4,172 456.4,168.8 456.4,163.1 461.7,163.1 
+	464.9,163.1 464.9,154.1 470.3,154.1 470.3,153.7 470.3,150.9 470.3,100.8 "/>
+<polygon id="outline_left" class="st1" points="60.9,35.6 57.8,35.6 57.8,38.8 57.8,40.6 49.4,40.6 49.4,43.8 49.4,49.5 41,49.5 
+	41,52.7 41,57.9 38.8,57.9 35.7,57.9 35.7,61.1 35.7,93.3 38.8,93.3 38.8,61.1 44.1,61.1 44.1,59.5 44.1,59.5 44.1,52.7 49.4,52.7 
+	52.5,52.7 52.5,43.8 57.8,43.8 60.9,43.8 60.9,38.8 188.6,38.8 188.6,35.6 "/>
+<polygon id="text_h" class="st1" points="163.1,90.1 163.1,158.6 171.2,158.6 171.2,151.8 179.4,151.8 179.4,124.3 211.9,124.3 
+	211.9,144.9 228.2,144.9 228.2,76.3 220.1,76.3 220.1,83.2 211.9,83.2 211.9,110.6 179.4,110.6 179.4,90.1 "/>
+<polygon id="text_a" class="st1" points="301.4,144.9 301.4,90.1 293.3,90.1 293.3,96.9 285.1,96.9 285.1,103.8 277,103.8 
+	277,110.6 268.9,110.6 268.9,117.5 260.7,117.5 260.7,124.3 252.6,124.3 252.6,131.2 244.5,131.2 244.5,138.1 236.3,138.1 
+	236.3,144.9 260.7,144.9 260.7,138.1 268.9,138.1 268.9,131.2 277,131.2 277,124.3 285.1,124.3 285.1,144.9 "/>
+<polygon id="text_k" class="st1" points="382.8,90.1 382.8,144.9 399,144.9 399,124.3 407.2,124.3 407.2,131.2 415.3,131.2 
+	415.3,138.1 423.4,138.1 423.4,144.9 431.6,144.9 431.6,151.8 439.7,151.8 439.7,158.6 447.9,158.6 447.9,138.1 439.7,138.1 
+	439.7,131.2 431.6,131.2 431.6,124.3 423.4,124.3 423.4,110.6 431.6,110.6 431.6,103.8 439.7,103.8 439.7,96.9 447.9,96.9 
+	447.9,90.1 423.4,90.1 423.4,96.9 415.3,96.9 415.3,103.8 407.2,103.8 407.2,110.6 399,110.6 399,90.1 "/>
+<polygon id="text_c" class="st1" points="362.4,97 362.4,90.1 362.4,90.1 329.9,90.1 329.9,90.1 329.9,97 321.8,97 321.8,103.8 
+	313.6,103.8 313.6,131.2 321.8,131.2 321.8,138 329.9,138 329.9,144.9 329.9,144.9 362.4,144.9 362.4,144.9 362.4,138 370.6,138 
+	370.6,131.2 329.9,131.2 329.9,103.8 370.6,103.8 370.6,97 "/>
+<g id="_x40_">
+	<path class="st2" d="M61.7,65.6l-5.3,5.3v36.6V144l5.3,5.3l5.3,5.3h26.3h26.3v-5.1v-5.1h-24h-24l-2.3-2.3l-2.3-2.3v-32.3V75.2
+		l2.3-2.3l2.3-2.3h30.2h30.2l2.3,2.3l2.3,2.3v24.1v24.1h-5.2H126v-21.1V81.2h-19h-19l-5.3,5.3l-5.3,5.3v15.6v15.6l5.3,5.3l5.3,5.3
+		h29.5h29.5v-31.4V70.8l-5.3-5.3l-5.3-5.3h-34.7H67L61.7,65.6 M92.2,95.9L92,96.1v11.3v11.3l0.2,0.2l0.2,0.2h9.4h9.4v-11.7V95.7
+		h-9.4h-9.4L92.2,95.9"/>
+</g>
+</svg>
+</span></p>
+<p>3rd place out of +105 teams <img alt="🥉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f949.svg" title=":third_place:" /></p>
+</li>
+<li>
+<p><strong><a href="https://cybersecuritychallenge.ca/">CyberSci Regionals 2024</a></strong></p>
+<p>1st team in Québec <img alt="🥇" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f947.svg" title=":first_place:" /></p>
+<p>2nd team in Canada <img alt="🥈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f948.svg" title=":second_place:" /></p>
+</li>
+<li>
+<p><strong><a href="https://hfctf.ca/">HackFestCTF Classic 2024</a></strong></p>
+<p>4th place among 35 teams</p>
+</li>
+<li>
+<p><strong><a href="https://www.athackctf.com/">@Hack 2024</a></strong> <span class="twemoji lg middle"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 505.2 207.7" style="enable-background:new 0 0 505.2 207.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#4440A0;}
+	.st1{fill:#F5DC38;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#F5DC38;}
+</style>
+<polygon id="bg" class="st0" points="501,22.3 501,13.4 492.6,13.4 492.6,4.5 484.2,4.5 484.2,0 335.5,0 316.8,0 280.9,0 262.3,0 
+	207.7,0 21.5,0 21.5,4.5 13.1,4.5 13.1,13.4 4.6,13.4 4.6,22.3 0,22.3 0,184.8 4.6,184.8 4.6,193.7 13.1,193.7 13.1,202.6 
+	21.5,202.6 21.5,207.7 207.3,207.7 261.3,207.7 282.6,207.7 334.6,207.7 336.7,207.7 405.9,207.7 405.9,201.9 414.3,201.9 
+	414.3,193 422.7,193 422.7,184.8 336.5,184.8 334.4,184.8 282.4,184.8 261.4,184.8 207.3,184.8 43.5,184.8 43.5,180.8 35.1,180.8 
+	35.1,184.8 35.1,184.8 35.1,180.8 35.1,180.8 35.1,171.8 35.1,171.8 35.1,171.8 26.7,171.8 26.7,162.9 21.7,162.9 21.7,44 26.7,44 
+	26.7,35.1 35.1,35.1 35.1,26.2 43.5,26.2 43.5,22.9 207.6,22.9 262.3,22.9 281.1,22.9 317,22.9 335.7,22.9 463.1,22.9 463.1,26 
+	471.6,26 471.6,34.9 480,34.9 480,43.8 483.6,43.8 483.6,170.2 478,170.2 478,179.1 473.8,179.1 469.6,179.1 469.6,184.8 462,184.8 
+	462,175.9 461.9,175.9 461.9,167 470.3,167 470.3,158.1 475,158.1 475,54.1 470.9,54.1 470.9,45.2 462.5,45.2 462.5,36.3 
+	454.1,36.3 454.1,31.7 317.1,31.7 317.1,31.9 281.1,31.9 281.1,31.7 207.6,31.7 51.9,31.7 51.9,36.2 43.5,36.2 43.5,45.1 35.1,45.1 
+	35.1,54 30.3,54 30.3,152.6 35.1,152.6 35.1,161.5 43.5,161.5 43.5,170.4 51.9,170.4 51.9,175.7 207.4,175.7 274.9,175.7 
+	274.9,175.9 349.9,175.9 349.9,175.7 440.3,175.7 440.3,207.7 483.3,207.7 483.3,201.9 491.7,201.9 491.7,194.5 492.6,194.5 
+	492.6,193 500.1,193 500.1,184.1 505.2,184.1 505.2,22.3 "/>
+<polygon id="outline_right" class="st1" points="467.1,100.8 467.1,150.9 461.7,150.9 461.7,153.7 461.7,154.1 461.7,159.9 
+	456.4,159.9 453.2,159.9 453.2,163.1 453.2,168.8 318.9,168.8 318.9,172 456.4,172 456.4,168.8 456.4,163.1 461.7,163.1 
+	464.9,163.1 464.9,154.1 470.3,154.1 470.3,153.7 470.3,150.9 470.3,100.8 "/>
+<polygon id="outline_left" class="st1" points="60.9,35.6 57.8,35.6 57.8,38.8 57.8,40.6 49.4,40.6 49.4,43.8 49.4,49.5 41,49.5 
+	41,52.7 41,57.9 38.8,57.9 35.7,57.9 35.7,61.1 35.7,93.3 38.8,93.3 38.8,61.1 44.1,61.1 44.1,59.5 44.1,59.5 44.1,52.7 49.4,52.7 
+	52.5,52.7 52.5,43.8 57.8,43.8 60.9,43.8 60.9,38.8 188.6,38.8 188.6,35.6 "/>
+<polygon id="text_h" class="st1" points="163.1,90.1 163.1,158.6 171.2,158.6 171.2,151.8 179.4,151.8 179.4,124.3 211.9,124.3 
+	211.9,144.9 228.2,144.9 228.2,76.3 220.1,76.3 220.1,83.2 211.9,83.2 211.9,110.6 179.4,110.6 179.4,90.1 "/>
+<polygon id="text_a" class="st1" points="301.4,144.9 301.4,90.1 293.3,90.1 293.3,96.9 285.1,96.9 285.1,103.8 277,103.8 
+	277,110.6 268.9,110.6 268.9,117.5 260.7,117.5 260.7,124.3 252.6,124.3 252.6,131.2 244.5,131.2 244.5,138.1 236.3,138.1 
+	236.3,144.9 260.7,144.9 260.7,138.1 268.9,138.1 268.9,131.2 277,131.2 277,124.3 285.1,124.3 285.1,144.9 "/>
+<polygon id="text_k" class="st1" points="382.8,90.1 382.8,144.9 399,144.9 399,124.3 407.2,124.3 407.2,131.2 415.3,131.2 
+	415.3,138.1 423.4,138.1 423.4,144.9 431.6,144.9 431.6,151.8 439.7,151.8 439.7,158.6 447.9,158.6 447.9,138.1 439.7,138.1 
+	439.7,131.2 431.6,131.2 431.6,124.3 423.4,124.3 423.4,110.6 431.6,110.6 431.6,103.8 439.7,103.8 439.7,96.9 447.9,96.9 
+	447.9,90.1 423.4,90.1 423.4,96.9 415.3,96.9 415.3,103.8 407.2,103.8 407.2,110.6 399,110.6 399,90.1 "/>
+<polygon id="text_c" class="st1" points="362.4,97 362.4,90.1 362.4,90.1 329.9,90.1 329.9,90.1 329.9,97 321.8,97 321.8,103.8 
+	313.6,103.8 313.6,131.2 321.8,131.2 321.8,138 329.9,138 329.9,144.9 329.9,144.9 362.4,144.9 362.4,144.9 362.4,138 370.6,138 
+	370.6,131.2 329.9,131.2 329.9,103.8 370.6,103.8 370.6,97 "/>
+<g id="_x40_">
+	<path class="st2" d="M61.7,65.6l-5.3,5.3v36.6V144l5.3,5.3l5.3,5.3h26.3h26.3v-5.1v-5.1h-24h-24l-2.3-2.3l-2.3-2.3v-32.3V75.2
+		l2.3-2.3l2.3-2.3h30.2h30.2l2.3,2.3l2.3,2.3v24.1v24.1h-5.2H126v-21.1V81.2h-19h-19l-5.3,5.3l-5.3,5.3v15.6v15.6l5.3,5.3l5.3,5.3
+		h29.5h29.5v-31.4V70.8l-5.3-5.3l-5.3-5.3h-34.7H67L61.7,65.6 M92.2,95.9L92,96.1v11.3v11.3l0.2,0.2l0.2,0.2h9.4h9.4v-11.7V95.7
+		h-9.4h-9.4L92.2,95.9"/>
+</g>
+</svg>
+</span></p>
+<p>3rd place out of +92 teams <img alt="🥉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f949.svg" title=":third_place:" /></p>
+</li>
+<li>
+<p><strong><a href="https://cybersecuritychallenge.ca/">CyberSci Regionals 2023</a></strong></p>
+<p>2nd team in Québec <img alt="🥈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f948.svg" title=":second_place:" /></p>
+</li>
+</ul>
+</div>
+<h3 id="individual-competitions">Individual Competitions <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240m-29.7 56C95.8 304 16 383.8 16 482.3c0 16.4 13.3 29.7 29.7 29.7h356.6c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3z"/></svg></span></h3>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong><a href="https://hackropole.fr/">FCSC 2025</a></strong> <span class="twemoji lg middle"><svg width="149.35mm" height="150.55mm" viewBox="0 0 149.35 150.55" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-32.646 -70.209)"><ellipse cx="107.32" cy="145.48" rx="74.675" ry="75.273" fill="#0a1a34" stroke-width=".27079"/><g stroke-width=".26458"><path d="m115.9 157.2 27.528 15.641-15.835 9.7858z" fill="#fff"/><path d="m71.627 105.78 8.5669 19.466 16.4-10.464" fill="#ef7276"/><path d="m96.593 114.78 29.064 18.591-4.2255-30.434" fill="#ef7276"/><path d="m125.66 133.38 18.23-11.488-22.455-18.946" fill="#da2641"/><path d="m121.43 102.94 13.096-8.288 9.3589 27.234" fill="#ef7276"/><path d="m95.596 125.66 20.888 13.204-15.141 9.6639 17.571 39.326-25.969 16.042-26.157-59.795z" fill="#fff"/><path d="m113.83 151.41h39.465l-19.705-12.594z" fill="#fff"/><path d="m97.791 85.244-1.1976 29.54 24.839-11.843z" fill="#da2641"/><path d="m97.791 85.244-8.7206 18.879 7.523 10.661" fill="#ef7276"/><path d="m89.07 104.12-17.443 1.6586 24.966 9.0023" fill="#d92641"/></g></g></svg></span></p>
+<p>124th / 2,712 (Top 5 %)</p>
+</li>
+<li>
+<p><strong><a href="https://www.404ctf.fr/">404CTF 2025</a></strong></p>
+<p>83rd / 2,893 (Top 3 %)</p>
+</li>
+<li>
+<p><strong><a href="https://www.404ctf.fr/">404CTF 2024</a></strong></p>
+<p>85th / 3,271 (Top 3 %)</p>
+</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 19, 2025 14:53:45 UTC">October 19, 2025</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 19, 2025 14:53:45 UTC">October 19, 2025</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Yxene" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.root-me.org/Yxene" target="_blank" rel="noopener" title="www.root-me.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.364 9.897c0-.448-.029-.896-.096-1.325 0-.028-.009-.057-.009-.086-.582-3.785-3.452-6.894-7.228-7.723a.96.96 0 1 0-1.144 1.144v3.519c0 .057.028.114.076.152a.2.2 0 0 0 .105.029c.019 0 .048 0 .067-.01l1.411-.534a.7.7 0 0 0 .41.286v1.659c-.715.878-1.602 1.669-2.546 2.375l-1.077-2.499a.73.73 0 0 0 .333-.61.734.734 0 1 0-.734.734h.038l1.125 2.603c-.658.477-1.335.906-2.002 1.297l-3.204-.963a.16.16 0 0 0-.114.01l-.954.372a.734.734 0 1 0 .143.438c0-.028-.009-.057-.009-.086l.896-.352 2.794.839a33.5 33.5 0 0 1-4.873 2.231l-.171.057a.92.92 0 0 0-.553-.181h-.029a8.7 8.7 0 0 1-.677-3.366c0-.572.057-1.135.162-1.678H7.69a.726.726 0 0 0 .706.543.734.734 0 0 0 0-1.468.73.73 0 0 0-.706.543h-4.1c.772-3.137 3.251-5.644 6.455-6.388a.98.98 0 0 0 .82.467c.534 0 .963-.429.963-.963S11.399 0 10.865 0a.97.97 0 0 0-.944.763c-4.205.953-7.285 4.739-7.285 9.125a9.3 9.3 0 0 0 .735 3.642.967.967 0 0 0 .372 1.602v3.757c0 .067.019.134.057.191l.21.143 2.851 2.012v2.403c0 .2.162.362.362.362h9.535c.2 0 .362-.162.362-.362v-2.403l2.861-2.012.21-.153a.34.34 0 0 0 .057-.19v-3.786a.958.958 0 0 0 .353-1.535 9 9 0 0 0 .763-3.662m-1.383 3.366h-.086a.96.96 0 0 0-.334 1.86v3.509l-3.003 2.117a.36.36 0 0 0-.153.295v2.022a.21.21 0 0 1-.21.209H15.08a.21.21 0 0 1-.21-.209v-.725c0-.191-.133-.362-.324-.382a.367.367 0 0 0-.401.363v.753c0 .115-.095.21-.209.21h-1.364a.21.21 0 0 1-.21-.21v-1.116c0-.19-.133-.362-.324-.381a.366.366 0 0 0-.4.362v1.145a.21.21 0 0 1-.21.209h-1.364a.21.21 0 0 1-.209-.209v-.744c0-.191-.134-.362-.325-.382a.366.366 0 0 0-.4.363v.753c0 .115-.095.21-.21.21H7.805a.21.21 0 0 1-.21-.21v-2.021a.37.37 0 0 0-.153-.296l-2.994-2.117v-3.547a.96.96 0 0 0 .563-.877c0-.057-.01-.114-.019-.172.381-.133 3.289-1.173 6.15-2.956 3.871-2.412 6.017-5.149 6.264-7.961a8.74 8.74 0 0 1 3.157 5.473c-.048 4.777-8.372 7.723-8.458 7.752-.019.009-.067.019-.105.038-.105-.019-.21-.038-.324-.057-.076-.019-.162-.029-.239-.048-.124-.019-.247-.048-.371-.076-.02-.01-.048-.01-.067-.01l-.143-.028c-.057-.01-.115-.029-.172-.039a5 5 0 0 1-.391-.095c-.238-.057-.467-.124-.696-.181-.219-.067-.448-.124-.658-.191H8.92a6 6 0 0 1-.467-.152 1 1 0 0 0-.153-.048c-.076-.029-.143-.048-.209-.067a3 3 0 0 1-.344-.124h-.009a6 6 0 0 1-.458-.171c-.143-.058-.267-.105-.362-.143-.096-.048-.181-.077-.229-.105-.057-.029-.086-.038-.086-.038s.019.028.057.066c.038.048.096.115.181.191.077.076.182.172.306.267s.267.2.419.305h.01a2.1 2.1 0 0 0-.096.61c0 1.097.897 1.993 1.993 1.993.849 0 1.573-.534 1.86-1.287l.295.029c.172.009.334.009.486.009.01 0 .019.01.029.01l1.611 1.64c.41.41 1.049.477 1.526.162l2.517-1.411a.8.8 0 0 0 .363-.658v-2.899c.972-.772 1.85-1.688 2.422-2.727a8.1 8.1 0 0 1-.601 2.145m-7.799 5.87-.002-.002q-.002-.003-.008-.003l-.013-.009-.003-.002a.03.03 0 0 1-.013-.009c-.01 0-.019-.009-.029-.009-.009 0-.019-.01-.019-.01-.009 0-.019 0-.028-.009h-.115c-.009 0-.019 0-.028.009-.01 0-.019.01-.019.01-.01 0-.019.009-.029.009-.009 0-.019.01-.029.02-.009 0-.009.009-.019.009l-.038.038-.772.963a.276.276 0 0 0 .219.448.28.28 0 0 0 .219-.104l.01-.01a.7.7 0 0 1 1.097 0l.009.01a.287.287 0 0 0 .391.047.277.277 0 0 0 .048-.391l-.782-.953c-.01-.01-.019-.019-.019-.029l-.019-.019zm-1.622-2.265c-.038.076-.095.152-.143.219a1.256 1.256 0 0 1-1.907 0 1.23 1.23 0 0 1-.295-.81c0-.077.009-.144.019-.22.152.076.314.153.476.229.22.095.449.191.687.267a9 9 0 0 0 1.163.315m-6.503-2.184a.5.5 0 0 1-.305-.114.449.449 0 0 1-.133-.506.47.47 0 0 1 .429-.295c.085 0 .162.028.229.067a.46.46 0 0 1 .228.4.46.46 0 0 1-.066.229.42.42 0 0 1-.382.219m16.21-.181a.48.48 0 0 1-.362.181.47.47 0 0 1-.334-.143.47.47 0 0 1-.124-.315c0-.2.124-.371.305-.429a.5.5 0 0 1 .162-.028.48.48 0 0 1 .458.372.3.3 0 0 1 .009.095.7.7 0 0 1-.114.267m-5.845-9.869c0 .029.009.048.009.067l-1.163.438V1.897a.92.92 0 0 0 .658-.457 8.5 8.5 0 0 1 2.823 1.201c-.01 1.411-.554 2.708-1.412 3.881V5.34a.73.73 0 0 0 .544-.706c0-.4-.324-.734-.734-.734a.74.74 0 0 0-.725.734m-3.48-1.735a.734.734 0 0 0-.735.696l-1.458.534a.19.19 0 0 0-.134.181v.925H7.442a.73.73 0 0 0-.705-.544.735.735 0 1 0 0 1.469.73.73 0 0 0 .705-.544h1.364a.19.19 0 0 0 .19-.19v-.983l1.288-.476c.124.238.372.4.648.4a.734.734 0 0 0 .734-.734.725.725 0 0 0-.724-.734m-.41-2.241a.46.46 0 0 1 .343-.153.468.468 0 1 1-.258.859.48.48 0 0 1-.209-.382.45.45 0 0 1 .124-.324m2.097.305a.467.467 0 0 1 .801-.324.462.462 0 0 1-.076.696.43.43 0 0 1-.267.086.45.45 0 0 1-.458-.458"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
