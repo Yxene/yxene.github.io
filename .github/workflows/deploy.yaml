@@ -44,12 +44,5 @@ jobs:
           git diff --cached --quiet || git commit -m "Auto-update Root Me stats [skip ci]"
           git push origin main
 
-      - name: Build MkDocs
-        run: |
-          mkdocs build --strict --verbose
-
-      - name: Build and deploy
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+      - name: Build and publish MkDocs
+        run: mkdocs gh-deploy --force --strict
