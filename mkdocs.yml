@@ -110,4 +110,8 @@ nav:
     - PolyPwn 2025:
       - my-challenges/polypwn-2025/README.md
       - TitaNIC: my-challenges/polypwn-2025/titanic/README.md
-
+    - UnitedCTF 2025:
+      - my-challenges/unitedctf-2025/README.md
+      - Disco Maghreb - Intro: my-challenges/unitedctf-2025/disco-maghreb-1/README.md
+      - Disco Maghreb - Catalogue: my-challenges/unitedctf-2025/disco-maghreb-2/README.md
+      - Disco Maghreb - Paroldle: my-challenges/unitedctf-2025/disco-maghreb-3/README.md
