@@ -59,6 +59,10 @@ extra:
     - icon: simple/rootme
       link: https://www.root-me.org/Yxene
 
+plugins:
+  - git-revision-date-localized:
+    enable_creation_date: true
+
 nav:
   - Home: README.md
   - Writeups:

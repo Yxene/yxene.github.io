@@ -28,7 +28,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs-material requests
+          pip install mkdocs-material requests mkdocs-git-revision-date-localized-plugin
 
       - name: Update dynamic snippet
         env:
