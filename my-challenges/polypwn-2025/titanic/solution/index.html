@@ -1836,34 +1836,42 @@
 <h2 id="write-up-fr">Write-up FR</h2>
 <p>La capture réseau contient des requêtes DNS pour déterminer l'adresse IP du domaine <code>titanic.pirate</code> (le navigateur essaie automatique d'autres noms de domaines pour compléter la recherche: <code>www.titanic.pirate</code>,<code>titanic.pirate.home</code>). Mais ce TLD (<em><a href="https://fr.wikipedia.org/wiki/Domaine_de_premier_niveau">Top Level Domain</a></em>) n'est pas administré par <a href="https://fr.wikipedia.org/wiki/Internet_Corporation_for_Assigned_Names_and_Numbers">l'ICANN</a> et ses serveurs racines ne réussissent pas à résoudre le nom de domaine <code>titanic.pirate</code>. Mais ce TLD est administré par l'association OpenNIC qui est la principale <a href="https://fr.wikipedia.org/wiki/Serveur_racine_alternatif_du_DNS">alternative aux racines de l'ICANN.</a></p>
 <p>Il faut donc résoudre ce nom de domaine en passant par OpenNIC plutôt que par l'ICANN. En regardant sur <a href="https://opennic.org/">leur site</a> on trouve de nombreux serveurs DNS, on en prends un et on utilise <code>dig</code> pour résoudre <code>titanic.pirate</code>:</p>
-<div class="highlight"><pre><span></span><code>dig<span class="w"> </span>@168.235.111.72<span class="w"> </span>titanic.pirate
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>dig<span class="w"> </span>@168.235.111.72<span class="w"> </span>titanic.pirate
+</code></pre></div></td></tr></table></div>
 <p>Et on récupère bien l'adresse IP associée au nom de domaine:</p>
-<div class="highlight"><pre><span></span><code>;; QUESTION SECTION:
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>;; QUESTION SECTION:
 ;titanic.pirate.      IN  A
 
 ;; ANSWER SECTION:
 titanic.pirate.    86400  IN  A  137.184.160.172
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <p>On peut maintenant se rendre sur le site Web hébergé à cette adresse IP avec <code>curl</code> ou son navigateur préféré:</p>
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>http://137.184.160.172
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>curl<span class="w"> </span>http://137.184.160.172
+</code></pre></div></td></tr></table></div>
 <p>Et on trouve le flag sur la page d'accueil ! 🚩</p>
 <h2 id="write-up-en">Write-up EN</h2>
 <p>The network capture contains DNS queries to determine the IP address of the domain <code>titanic.pirate</code> (the browser automatically tries other domain names to complete the search: <code>www.titanic.pirate</code>, <code>titanic.pirate.home</code>). However, this TLD (<em><a href="https://en.wikipedia.org/wiki/Top-level_domain">Top-Level Domain</a></em>) is not managed by <a href="https://en.wikipedia.org/wiki/Internet_Corporation_for_Assigned_Names_and_Numbers">ICANN</a>, and its root servers fail to resolve the domain name <code>titanic.pirate</code>. Instead, this TLD is managed by the OpenNIC association, which is the main <a href="https://en.wikipedia.org/wiki/Alternative_DNS_root">alternative to ICANN's root servers</a>.</p>
 <p>Therefore, this domain name must be resolved using OpenNIC rather than ICANN. Looking at <a href="https://opennic.org/">their website</a>, we can find many DNS servers. We choose one and use <code>dig</code> to resolve <code>titanic.pirate</code>:</p>
-<div class="highlight"><pre><span></span><code>dig<span class="w"> </span>@168.235.111.72<span class="w"> </span>titanic.pirate
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>dig<span class="w"> </span>@168.235.111.72<span class="w"> </span>titanic.pirate
+</code></pre></div></td></tr></table></div>
 <p>And we successfully retrieve the IP address associated with the domain name:</p>
-<div class="highlight"><pre><span></span><code>;; QUESTION SECTION:
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>;; QUESTION SECTION:
 ;titanic.pirate.      IN  A
 
 ;; ANSWER SECTION:
 titanic.pirate.    86400  IN  A  137.184.160.172
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <p>Now, we can visit the website hosted at this IP address using <code>curl</code> or our preferred browser:</p>
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>http://137.184.160.172
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>curl<span class="w"> </span>http://137.184.160.172
+</code></pre></div></td></tr></table></div>
 <p>And we find the flag on the homepage! 🚩</p>
 <h2 id="flag">Flag</h2>
 <p><code>polycyber{4lt3rn4t1v3_DN5_r007_n3v3r_s1nk_unl1k3_T1t4n1c}</code></p>
@@ -1974,7 +1982,7 @@ titanic.pirate.    86400  IN  A  137.184.160.172
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../../assets/javascripts/bundle.f55a23d4.min.js"></script>

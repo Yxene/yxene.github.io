@@ -1871,7 +1871,15 @@
 <p>Pour automatiser la communication avec le serveur et répondre dans le temps imparti, on utilise le langage Python et la bibliothèque <a href="https://github.com/Gallopsled/pwntools">pwntools</a> mais il existe de nombreuses autres alternatives.</p>
 <h3 id="difficulte-0">Difficulté 0</h3>
 <p>Dans ce premier niveau de difficulté, le texte original est encore facilement lisible et avec quelques essais on arrive à trouver la correspondance complète:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
     <span class="s1">&#39;4&#39;</span><span class="p">:</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span>
     <span class="s1">&#39;3&#39;</span><span class="p">:</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span>
     <span class="s1">&#39;9&#39;</span><span class="p">:</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span>
@@ -1880,10 +1888,21 @@
     <span class="s1">&#39;5&#39;</span><span class="p">:</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span>
     <span class="s1">&#39;7&#39;</span><span class="p">:</span> <span class="s1">&#39;t&#39;</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <h3 id="difficulte-1">Difficulté 1</h3>
 <p>Même chose que précédemment avec plus de lettre codés et moins de lisibilité. La différence majeure avec la difficulté précédente est qu'on a plus "1 caractère leet speak = 1 caractère en clair". La correspondance complète:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
     <span class="s1">&#39;/-</span><span class="se">\&#39;</span><span class="s1">: &#39;</span><span class="n">a</span><span class="s1">&#39;,</span>
     <span class="s1">&#39;/3&#39;</span><span class="p">:</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span>
     <span class="s1">&#39;/-/&#39;</span><span class="p">:</span> <span class="s1">&#39;h&#39;</span><span class="p">,</span>
@@ -1895,10 +1914,37 @@
     <span class="s1">&#39;\|/&#39;</span><span class="p">:</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span>
     <span class="s1">&#39;-/_&#39;</span><span class="p">:</span> <span class="s1">&#39;z&#39;</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <h3 id="difficulte-2">Difficulté 2</h3>
 <p>Dans ce dernier niveau de difficulté toutes les lettres de l'alphabet sont changés, ce qui rend le texte difficilement lisible mais la correspondance complète est trouvable avec plusieurs citations:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
     <span class="s1">&#39;@&#39;</span><span class="p">:</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span>
     <span class="s1">&#39;|3&#39;</span><span class="p">:</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span>
     <span class="s1">&#39;[&#39;</span><span class="p">:</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span>
@@ -1926,10 +1972,19 @@
     <span class="s1">&#39;¥&#39;</span><span class="p">:</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span>
     <span class="s1">&#39;7_&#39;</span><span class="p">:</span> <span class="s1">&#39;z&#39;</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <p>Comme on a affaire à un <a href="https://fr.wikipedia.org/wiki/Code_pr%C3%A9fixe">code préfixe</a>, il n'y a pas d'ambiguité lorsqu'on décode le Leet Speak.</p>
 <p>Une fois qu'on a les 3 correspondances, on utilise la bibliothèque Python pwntools pour communiquer avec le serveur:</p>
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">level</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">for</span> <span class="n">level</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
     <span class="n">io</span> <span class="o">=</span> <span class="n">remote</span><span class="p">(</span><span class="n">HOST</span><span class="p">,</span><span class="n">PORT</span><span class="p">)</span> <span class="c1"># Connexion au serveur</span>
     <span class="n">io</span><span class="o">.</span><span class="n">sendafter</span><span class="p">(</span><span class="sa">b</span><span class="s2">&quot;) : &quot;</span><span class="p">,</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">level</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span> <span class="c1"># Envoi du niveau de difficulté</span>
     <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
@@ -1939,7 +1994,7 @@
         <span class="k">for</span> <span class="n">leetChar</span> <span class="ow">in</span> <span class="n">allDicts</span><span class="p">[</span><span class="n">level</span><span class="p">]:</span>
             <span class="n">originalQuote</span> <span class="o">=</span> <span class="n">originalQuote</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">leetChar</span><span class="p">,</span><span class="n">allDicts</span><span class="p">[</span><span class="n">level</span><span class="p">][</span><span class="n">leetChar</span><span class="p">])</span> <span class="c1"># Traduction de la phrase leet speakée</span>
         <span class="n">io</span><span class="o">.</span><span class="n">sendline</span><span class="p">(</span><span class="n">originalQuote</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span> <span class="c1"># Envoi de la phrase traduite</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <h2 id="script-complet">Script complet</h2>
 <p><a href="solution.py">Le script complet est ici</a>.</p>
 <h2 id="flag">Flag</h2>
@@ -2051,7 +2106,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../../assets/javascripts/bundle.f55a23d4.min.js"></script>

@@ -1861,7 +1861,14 @@
 <p>Le principe est le même que pour le challenge précédent, mais la nouvelle difficulté est qu'un symbole LeetSpeak peut être utilisé pour encoder différentes lettres.</p>
 <h3 id="correspondance-11">Correspondance 1:1</h3>
 <p>Certains symboles LeetSpeak correspondent à une seule lettre en clair. Dans ce cas-là, la solution est la même que dans le challenge précédent.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
     <span class="s1">&#39;4&#39;</span><span class="p">:</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span>
     <span class="s1">&#39;3&#39;</span><span class="p">:</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span>
     <span class="s1">&#39;9&#39;</span><span class="p">:</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span>
@@ -1869,16 +1876,21 @@
     <span class="s1">&#39;5&#39;</span><span class="p">:</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span>
     <span class="s1">&#39;2&#39;</span><span class="p">:</span> <span class="s1">&#39;z&#39;</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <h3 id="correspondance-1n">Correspondance 1:n</h3>
 <p>Certains symboles LeetSpeak correspondent désormais à plusieurs lettres en clair, ce qui rend le décodage non-déterministe.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
     <span class="s1">&#39;1&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s2">&quot;i&quot;</span><span class="p">,</span> <span class="s2">&quot;l&quot;</span><span class="p">],</span>
     <span class="s1">&#39;7&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s2">&quot;t&quot;</span><span class="p">,</span> <span class="s2">&quot;y&quot;</span><span class="p">],</span>
     <span class="s1">&#39;&lt;|&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;d&quot;</span><span class="p">,</span> <span class="s2">&quot;q&quot;</span><span class="p">],</span>
     <span class="s1">&#39;\/&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;u&quot;</span><span class="p">,</span> <span class="s2">&quot;v&quot;</span><span class="p">]</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <p>Par exemple, le LeetSpeak <code>&lt;|475</code> peut correspondre à 4 "mots" différents : <code>dats</code>, <code>days</code>, <code>qats</code> et <code>qays</code></p>
 <p>Pour palier à ce problème, on va générer tous les mots possibles puis on va regarder ceux qui existent en anglais. J'ai utilisé <a href="https://github.com/dwyl/english-words/blob/master/words_alpha.txt">un grand dictionnaire anglais</a> afin d'éviter les faux négatifs.</p>
 <p>Si parmi les mots générés, plusieurs sont présent dans la langue anglaise, alors on va choisir le mot le plus probable à l'aide d'un <a href="https://github.com/first20hours/google-10000-english/blob/master/google-10000-english-usa-no-swears.txt">deuxième dictionnaire</a> plus restreint et rangé par ordre de fréquence.</p>
@@ -1995,7 +2007,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../../assets/javascripts/bundle.f55a23d4.min.js"></script>

@@ -1888,15 +1888,29 @@
 <h3 id="2-reconnaissance">2. Reconnaissance</h3>
 <p>On commence par écrire un client MCP. La bibliothèque <a href="https://gofastmcp.com/getting-started/welcome">FastMCP</a> permet de communiquer facilement avec un serveur MCP en Python.</p>
 <p>On instancie le client :</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">fastmcp</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">fastmcp</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span>
 <span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;http://127.0.0.1:8080/mcp&quot;</span><span class="p">)</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <p>Avant toute chose, on peut tester la connexion avec un <code>ping()</code>.</p>
 <hr />
 <h3 id="3-decouverte-des-tools">3. Découverte des tools</h3>
 <p>Ensuite, la méthode clé est <strong><code>list_tools()</code></strong> : elle permet d'afficher la liste de tous les tools exposés par le serveur.
 En listant les tools disponibles, on obtient (output simplifié) :</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JSON</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;get_flag&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Get the first flag, if you want !&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;inputSchema&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
@@ -1910,18 +1924,19 @@ En listant les tools disponibles, on obtient (output simplifié) :</p>
 <span class="w">        </span><span class="err">...</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <p>On voit qu'un seul tool est disponible : <strong><code>get_flag</code></strong>.
 Il prend un argument booléen <code>i_want_flag</code> qui doit probablement être mis à <code>True</code> pour obtenir quelque chose d'intéressant.</p>
 <hr />
 <h3 id="4-exploitation-du-tool">4. Exploitation du tool</h3>
 <p>Pour appeler un tool, on utilise la méthode <code>call_tool()</code> du client :</p>
-<div class="highlight"><pre><span></span><code><span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">call_tool</span><span class="p">(</span><span class="s2">&quot;get_flag&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;i_want_flag&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">call_tool</span><span class="p">(</span><span class="s2">&quot;get_flag&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;i_want_flag&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">structured_content</span><span class="p">)</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <p>En envoyant la requête avec <code>i_want_flag = True</code>, le serveur nous renvoie directement :</p>
-<div class="highlight"><pre><span></span><code>flag-MCP_1s_n07_s0_d1ff1cul7-Fn99RLq5
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>flag-MCP_1s_n07_s0_d1ff1cul7-Fn99RLq5
+</code></pre></div></td></tr></table></div>
 <h2 id="script-complet">Script complet</h2>
 <p><a href="solution.py">Le script complet est ici</a>.</p>
 <h2 id="flag">Flag</h2>
@@ -2033,7 +2048,7 @@ Il prend un argument booléen <code>i_want_flag</code> qui doit probablement êt
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../../assets/javascripts/bundle.f55a23d4.min.js"></script>

