@@ -66,6 +66,7 @@ extra:
 plugins:
   - git-revision-date-localized:
       enable_creation_date: true
+  - search
 
 nav:
   - Home: README.md
