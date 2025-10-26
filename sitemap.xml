@@ -170,7 +170,7 @@
     </url>
     <url>
          <loc>https://yxene.github.io/writeups/tryhackme/</loc>
-         <lastmod>2025-10-02</lastmod>
+         <lastmod>2025-10-26</lastmod>
     </url>
     <url>
          <loc>https://yxene.github.io/writeups/tryhackme/agent-sudo/</loc>
@@ -179,6 +179,10 @@
     <url>
          <loc>https://yxene.github.io/writeups/tryhackme/cheese-ctf/</loc>
          <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://yxene.github.io/writeups/tryhackme/publisher/</loc>
+         <lastmod>2025-10-26</lastmod>
     </url>
     <url>
          <loc>https://yxene.github.io/writeups/tryhackme/rootme/</loc>
