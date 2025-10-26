@@ -78,6 +78,7 @@ nav:
       - Cheese CTF: writeups/tryhackme/cheese-ctf/README.md
       - Agent Sudo: writeups/tryhackme/agent-sudo/README.md
       - Startup: writeups/tryhackme/startup/README.md
+      - Publisher: writeups/tryhackme/publisher/README.md
     - FCSC:
       - writeups/fcsc/README.md
       - Petite Frappe: writeups/fcsc/petite-frappe/README.md
