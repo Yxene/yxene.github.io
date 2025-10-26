@@ -1,10 +1,10 @@
 # Docs:
 
-- https://github.com/nuts7/CVE-2023-27372
+- [CVE-2023-27372](https://github.com/nuts7/CVE-2023-27372)
 
-- https://cyberkhalid.github.io/posts/ssh-persist/
+- [SSH persistence](https://cyberkhalid.github.io/posts/ssh-persist/)
 
-- https://book.hacktricks.xyz/linux-hardening/privilege-escalation/docker-security/apparmor#apparmor-shebang-bypass
+- [AppArmor Shebang Bypass](https://book.hacktricks.xyz/linux-hardening/privilege-escalation/docker-security/apparmor#apparmor-shebang-bypass)
 
 # Writeup
 
