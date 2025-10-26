@@ -47,4 +47,12 @@ hide:
 
     [:octicons-arrow-right-24: Read the writeup](startup/README.md)
 
+-   :material-chess-queen: __Startup__
+
+    ---
+
+    Test your enumeration skills on this boot-to-root machine.
+
+    [:octicons-arrow-right-24: Read the writeup](publisher/README.md)
+
 </div>
