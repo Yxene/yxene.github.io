@@ -1,6 +1,7 @@
-site_name: Yxène
+site_name: Yxene
 site_url: https://yxene.com
 repo_url: https://github.com/Yxene/yxene.github.io
+site_description: "Yxene's website ! You can find my writeups and challenges here."
 
 theme:
   name: material
