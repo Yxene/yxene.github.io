@@ -1,3 +1,3 @@
-- :fontawesome-solid-ranking-star: **Rank :** 1,206 / +350,000
-- :material-star-four-points: **Points :** 5,500 pts
-- :material-check: **Challenges solved :** 243 challenges
+- :fontawesome-solid-ranking-star: **Rank :** 1,188 / +350,000
+- :material-star-four-points: **Points :** 5,560 pts
+- :material-check: **Challenges solved :** 245 challenges
