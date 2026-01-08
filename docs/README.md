@@ -31,7 +31,8 @@ hide:
 
 __[Check my profile](https://www.root-me.org/Yxene)__
 
---8<-- "snippets/stats.md"
+![Root-me-stats](https://root-me-diff.vercel.app/rm-gh?nickname=Yxene&gstats=show&style=sunny#only-dark)
+![Root-me-stats](https://root-me-diff.vercel.app/rm-gh?nickname=Yxene&gstats=show&style=light#only-light)
 
 ## Other results :material-podium:
 
