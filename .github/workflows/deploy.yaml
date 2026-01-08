@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-  schedule:
-    - cron: "42 */6 * * *"
   workflow_dispatch:
 
 permissions:
@@ -30,20 +28,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip install mkdocs-material requests mkdocs-git-revision-date-localized-plugin
-
-      - name: Update dynamic snippet
-        env:
-          ROOT_ME_API_KEY: ${{ secrets.ROOT_ME_API_KEY }}
-        run: |
-          python update_root_me_stats.py
-
-      - name: Commit updated snippet
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add snippets/stats.md
-          git diff --cached --quiet || git commit -m "Auto-update Root Me stats [skip ci]"
-          git push origin main
 
       - name: Build MkDocs
         run: |
