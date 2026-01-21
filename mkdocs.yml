@@ -37,7 +37,6 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.indexes
-    - navigation.path
     - navigation.top
     - content.code.copy
 
