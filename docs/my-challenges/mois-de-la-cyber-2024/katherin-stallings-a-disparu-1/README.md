@@ -11,13 +11,9 @@ Tout ce que la police a pu vous fournir, c’est ce fichier ZIP qui se trouvait 
 
 ## Hints
 
-<details>
-  <summary>1er indice</summary>
-  La police a aussi trouvé une photo de la victime sur sa clé USB, ça pourrait vous aider: [Selfie.jpg](Selfie.jpg)
-</details>
+??? info "1er indice"
+    La police a aussi trouvé une photo de la victime sur sa clé USB, ça pourrait vous aider: [Selfie.jpg](Selfie.jpg)
 
 
-<details>
-  <summary>2ème indice</summary>
-  La police (encore eux) a trouvé un exemplaire du livre Les réseaux sociaux pour les nuls dont un passage été surligné: [Les reseaux sociaux pour les nuls.png](Les reseaux sociaux pour les nuls.png)
-</details>
+??? info "2ème indice"
+    La police (encore eux) a trouvé un exemplaire du livre Les réseaux sociaux pour les nuls dont un passage été surligné: [Les reseaux sociaux pour les nuls.png](Les reseaux sociaux pour les nuls.png)
