@@ -43,5 +43,10 @@ Whether you are a beginner curious about CTFs or an experienced player looking f
 
     [:octicons-arrow-right-24: Go to CryptoHack section](cryptohack/README.md)
 
+-   :octicons-moon-24: __Midnight Flag CTF__
+
+    ---
+
+    [:octicons-arrow-right-24: Go to Midnight Flag CTF section](midnight-flag-ctf/README.md)
 
 </div>
