@@ -89,7 +89,7 @@ However, the program never checks that `shadow_stack_ptr < 512`! This means the 
 | `0x405010` 	| `entities`          	|
 | `0x40500c` 	| `nights`            	|
 
-By incrementing `shadow_stack_ptr` enough, we can move the top of the stack into the space allocated for the `username` variable—which works out perfectly, since we can write 16 arbitrary bytes there!
+By incrementing `shadow_stack_ptr` enough, we can move the top of the stack into the space allocated for the `username` variable-which works out perfectly, since we can write 16 arbitrary bytes there!
 
 ```c
 read(0, username, 16);
