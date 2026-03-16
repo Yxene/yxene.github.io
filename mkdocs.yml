@@ -94,6 +94,9 @@ nav:
     - CryptoHack:
       - writeups/cryptohack/README.md
       - JSON in JSON: writeups/cryptohack/json-in-json/README.md
+    - Midnight Flag CTF:
+      - writeups/midnight-flag-ctf/README.md
+      - Revenant: writeups/midnight-flag-ctf/revenant/README.md
   - My Challenges:
     - my-challenges/README.md
     - 24@CTF 2024:
