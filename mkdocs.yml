@@ -101,15 +101,29 @@ nav:
     - my-challenges/README.md
     - 24@CTF 2024:
       - my-challenges/24hctf-2024/README.md
-      - SteganOsint 1: my-challenges/24hctf-2024/steganosint-1/README.md
-      - SteganOsint 2: my-challenges/24hctf-2024/steganosint-2/README.md
-      - Sur les traces de Scofield 1: my-challenges/24hctf-2024/sur-les-traces-de-scofield-1/README.md
-      - Sur les traces de Scofield 2: my-challenges/24hctf-2024/sur-les-traces-de-scofield-2/README.md
-      - Sur les traces de Scofield 3: my-challenges/24hctf-2024/sur-les-traces-de-scofield-3/README.md
+      - SteganOsint 1:
+        - my-challenges/24hctf-2024/steganosint-1/README.md
+        - Solution: my-challenges/24hctf-2024/steganosint-1/solution/README.md
+      - SteganOsint 2:
+        - my-challenges/24hctf-2024/steganosint-2/README.md
+        - Solution: my-challenges/24hctf-2024/steganosint-2/solution/README.md
+      - Sur les traces de Scofield 1:
+        - my-challenges/24hctf-2024/sur-les-traces-de-scofield-1/README.md
+        - Solution: my-challenges/24hctf-2024/sur-les-traces-de-scofield-1/solution/README.md
+      - Sur les traces de Scofield 2:
+        - my-challenges/24hctf-2024/sur-les-traces-de-scofield-2/README.md
+        - Solution: my-challenges/24hctf-2024/sur-les-traces-de-scofield-2/solution/README.md
+      - Sur les traces de Scofield 3:
+        - my-challenges/24hctf-2024/sur-les-traces-de-scofield-3/README.md
+        - Solution: my-challenges/24hctf-2024/sur-les-traces-de-scofield-3/solution/README.md
     - UnitedCTF 2024:
       - my-challenges/unitedctf-2024/README.md
-      - Fortune L33t3r 1: my-challenges/unitedctf-2024/fortune-l33t3r-1/README.md
-      - Fortune L33t3r 2: my-challenges/unitedctf-2024/fortune-l33t3r-2/README.md
+      - Fortune L33t3r 1:
+        - my-challenges/unitedctf-2024/fortune-l33t3r-1/README.md
+        - Solution: my-challenges/unitedctf-2024/fortune-l33t3r-1/solution/README.md
+      - Fortune L33t3r 2:
+        - my-challenges/unitedctf-2024/fortune-l33t3r-2/README.md
+        - Solution: my-challenges/unitedctf-2024/fortune-l33t3r-2/solution/README.md
     - Mois de la cyber 2024:
       - my-challenges/mois-de-la-cyber-2024/README.md
       - Katherin Stallings a disparu 1: my-challenges/mois-de-la-cyber-2024/katherin-stallings-a-disparu-1/README.md
@@ -120,17 +134,31 @@ nav:
       - Dialing To Merry Festivities: my-challenges/h0h0h0day-ctf-2024/dialing-to-merry-festivities/README.md
     - PolyPwn 2025:
       - my-challenges/polypwn-2025/README.md
-      - TitaNIC: my-challenges/polypwn-2025/titanic/README.md
+      - TitaNIC:
+        - my-challenges/polypwn-2025/titanic/README.md
+        - Solution: my-challenges/polypwn-2025/titanic/solution/README.md
     - UnitedCTF 2025:
       - my-challenges/unitedctf-2025/README.md
-      - Disco Maghreb - Intro: my-challenges/unitedctf-2025/disco-maghreb-1/README.md
-      - Disco Maghreb - Catalogue: my-challenges/unitedctf-2025/disco-maghreb-2/README.md
-      - Disco Maghreb - Paroldle: my-challenges/unitedctf-2025/disco-maghreb-3/README.md
+      - Disco Maghreb - Intro:
+        - my-challenges/unitedctf-2025/disco-maghreb-1/README.md
+        - Solution: my-challenges/unitedctf-2025/disco-maghreb-1/solution/README.md
+      - Disco Maghreb - Catalogue:
+        - my-challenges/unitedctf-2025/disco-maghreb-2/README.md
+        - Solution: my-challenges/unitedctf-2025/disco-maghreb-2/solution/README.md
+      - Disco Maghreb - Paroldle:
+        - my-challenges/unitedctf-2025/disco-maghreb-3/README.md
+        - Solution: my-challenges/unitedctf-2025/disco-maghreb-3/solution/README.md
     - PolyPwn 2026:
       - my-challenges/polypwn-2026/README.md
       - Concealed Warehouse:
         - my-challenges/polypwn-2026/concealed-warehouse/README.md
         - Solution: my-challenges/polypwn-2026/concealed-warehouse/solution/README.md
-      - Wireless Whispers: my-challenges/polypwn-2026/wireless-whispers/README.md
-      - Secret inVisible Gallery: my-challenges/polypwn-2026/secret-invisible-gallery/README.md
-      - Labo-rinthe: my-challenges/polypwn-2026/labo-rinthe/README.md
+      - Wireless Whispers:
+        - my-challenges/polypwn-2026/wireless-whispers/README.md
+        - Solution: my-challenges/polypwn-2026/wireless-whispers/solution/README.md
+      - Secret inVisible Gallery:
+        - my-challenges/polypwn-2026/secret-invisible-gallery/README.md
+        - Solution: my-challenges/polypwn-2026/secret-invisible-gallery/solution/README.md
+      - Labo-rinthe:
+        - my-challenges/polypwn-2026/labo-rinthe/README.md
+        - Solution: my-challenges/polypwn-2026/labo-rinthe/solution/README.md
