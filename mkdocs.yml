@@ -128,7 +128,9 @@ nav:
       - Disco Maghreb - Paroldle: my-challenges/unitedctf-2025/disco-maghreb-3/README.md
     - PolyPwn 2026:
       - my-challenges/polypwn-2026/README.md
-      - Concealed Warehouse: my-challenges/polypwn-2026/concealed-warehouse/README.md
+      - Concealed Warehouse:
+        - my-challenges/polypwn-2026/concealed-warehouse/README.md
+        - Solution: my-challenges/polypwn-2026/concealed-warehouse/solution/README.md
       - Wireless Whispers: my-challenges/polypwn-2026/wireless-whispers/README.md
       - Secret inVisible Gallery: my-challenges/polypwn-2026/secret-invisible-gallery/README.md
       - Labo-rinthe: my-challenges/polypwn-2026/labo-rinthe/README.md
