@@ -3,7 +3,7 @@ hide:
   - toc
 ---
 
-# PolyPwn 2026 ::
+# PolyPwn 2026 :material-microscope:
 
 ## Web
 
@@ -50,5 +50,14 @@ hide:
     What could be hiding **behind** it?
 
     [:octicons-arrow-right-24: Read the description](secret-invisible-gallery/README.md)
+
+-   :material-sign-direction: __Labo-rinthe__
+
+    ---
+
+    You're completely lost in the laboratory!
+    No matter how hard you try to follow the signs, you always end up back where you started...
+
+    [:octicons-arrow-right-24: Read the description](labo-rinthe/README.md)
 
 </div>
