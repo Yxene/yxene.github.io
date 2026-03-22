@@ -36,3 +36,19 @@ hide:
     [:octicons-arrow-right-24: Read the description](wireless-whispers/README.md)
 
 </div>
+
+## Steganography
+
+<div class="grid cards" markdown>
+
+-   :material-svg: __Secret inVisible Gallery__
+
+    ---
+
+    A strange image has just emerged from a room in the laboratory called the "Secret Invisible Gallery".
+
+    What could be hiding **behind** it?
+
+    [:octicons-arrow-right-24: Read the description](secret-invisible-gallery/README.md)
+
+</div>
