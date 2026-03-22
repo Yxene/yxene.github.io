@@ -20,3 +20,19 @@ hide:
     [:octicons-arrow-right-24: Read the description](concealed-warehouse/README.md)
 
 </div>
+
+## Network
+
+<div class="grid cards" markdown>
+
+-   :material-wifi-lock: __Wireless Whispers__
+
+    ---
+
+    During a reconnaissance phase, you managed to capture the lab's Wi-Fi traffic with an antenna.
+
+    Unfortunately, the traffic appears to be encrypted...
+
+    [:octicons-arrow-right-24: Read the description](wireless-whispers/README.md)
+
+</div>
