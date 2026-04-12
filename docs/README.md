@@ -73,6 +73,11 @@ __[Check my profile here](https://www.root-me.org/Yxene)__
 
 <div class="grid cards" markdown>
 
+-   __[FCSC 2026](https://hackropole.fr/)__ :myicons-fcsc:{ .lg .middle }
+
+    49th / 1,284 (Top 4 %)
+    17th / 469 (Top 4%) (Senior Category)
+
 -   __[FCSC 2025](https://hackropole.fr/)__ :myicons-fcsc:{ .lg .middle }
 
     124th / 2,712 (Top 5 %)
