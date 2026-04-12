@@ -39,4 +39,12 @@ hide:
 
     [:octicons-arrow-right-24: Read the writeup](cryptolocker-v1/README.md)
 
+-   :fire: __Prechall__ (FCSC 2026)
+
+    ---
+
+    > Solving all three challenges will earn you 1 symbolic point for the FCSC 2026, which will be displayed on the site as a 🔥 next to your username.
+
+    [:octicons-arrow-right-24: Read the writeup](prechall-2026/README.md)
+
 </div>
