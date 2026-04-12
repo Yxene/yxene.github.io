@@ -186,7 +186,7 @@
     </url>
     <url>
          <loc>https://yxene.com/writeups/fcsc/</loc>
-         <lastmod>2025-10-09</lastmod>
+         <lastmod>2026-04-12</lastmod>
     </url>
     <url>
          <loc>https://yxene.com/writeups/fcsc/cryptolocker-v1/</loc>
@@ -203,6 +203,10 @@
     <url>
          <loc>https://yxene.com/writeups/fcsc/petite-frappe/</loc>
          <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://yxene.com/writeups/fcsc/prechall-2026/</loc>
+         <lastmod>2026-04-12</lastmod>
     </url>
     <url>
          <loc>https://yxene.com/writeups/midnight-flag-ctf/</loc>
