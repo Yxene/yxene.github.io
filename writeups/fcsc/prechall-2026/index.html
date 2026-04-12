@@ -3873,7 +3873,7 @@
 Unfortunately, the comment associated with the public key has been lost.</p>
 <p>For this challenge, you'll find a URL that contains the second step of the prechall. </p>
 </blockquote>
-<p><a href="src/i-ve-lost-my-comment.tar.xz">File provided: <code>i-ve-lost-my-comment.tar.xz</code></a></p>
+<p>File provided: <a href="src/i-ve-lost-my-comment.tar.xz"><code>i-ve-lost-my-comment.tar.xz</code></a></p>
 <p>We're provided with an OpenSSH private key and a corrupted public key. Since an OpenSSH public key is determined by its private key, regenerating it shouldn't be a problem.</p>
 <p>And indeed, we find the <code>-y</code> option of <code>ssh-keygen</code> for this purpose:</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -3893,7 +3893,7 @@ Apparently, it's endless.</p>
 <p>Can you succeed where your parents failed?</p>
 <p>For this challenge, you'll find another URL; this one contains the final step of the pre-challenge. </p>
 </blockquote>
-<p><a href="src/veggie-dino.8xp">File provided: <code>veggie-dino.8xp</code></a></p>
+<p>File provided: <a href="src/veggie-dino.8xp"><code>veggie-dino.8xp</code></a></p>
 <p>This time it's a reverse challenge... but with a weird file format <img alt="😬" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f62c.svg" title=":grimacing:" /> :</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>file veggie-dino.8xp 
@@ -3925,11 +3925,11 @@ veggie-dino.8xp: TI-83+ Graphing Calculator (assembly program)
 <p>And off you go for a little dino game </p>
 <p><img alt="" src="img/game.png" /></p>
 <p><img alt="" src="img/play.png" /></p>
-<p>But it takes way too long to reach $9999$. So we need to figure out another way to win.</p>
+<p>But it takes way too long to reach 9999. So we need to figure out another way to win.</p>
 <p>I tried the TilEm debugger, it looks pretty good, but I think we can do even better!</p>
-<p>The number $9999$ is <code>0x270f</code>. So we can look in the file to see if we find that value. And bingo—we find that value (in little-endian, so <code>0f27</code>) just once. We can change it to <code>0100</code>, which is $1$ in decimal. Then we transfer our modified file.</p>
+<p>The number 9999 is <code>0x270f</code>. So we can look in the file to see if we find that value. And bingo—we find that value (in little-endian, so <code>0f27</code>) just once. We can change it to <code>0100</code>, which is 1 in decimal. Then we transfer our modified file.</p>
 <p><img alt="" src="img/prgm_hack.png" /></p>
-<p>At first glance, nothing has changed; the target score at the top is still $9999$.</p>
+<p>At first glance, nothing has changed; the target score at the top is still 9999.</p>
 <p><img alt="" src="img/game_hack.png" /></p>
 <p>But when we collect the first apple: </p>
 <p><img alt="" src="img/flag.png" /></p>
@@ -3940,7 +3940,7 @@ veggie-dino.8xp: TI-83+ Graphing Calculator (assembly program)
 <p>Once you've found the flag hidden in this video, submit it using the form at the prechall starting point.</p>
 <p>⚠️ Warning: the sound may be loud. </p>
 </blockquote>
-<p><a href="src/oscillart.webm">File provided: <code>oscillart.webm</code></a></p>
+<p>File provided: <a href="src/oscillart.webm"><code>oscillart.webm</code></a></p>
 <video controls>
 <source src="src/oscillart.webm" type="video/webm">
 </video>
@@ -3979,7 +3979,7 @@ npm<span class="w"> </span>run<span class="w"> </span>demo
 Malheureusement, le commentaire associé dans la clé publique a été perdu.</p>
 <p>Pour cette épreuve, vous allez trouver une URL, celle-ci contient la deuxième étape du prechall. </p>
 </blockquote>
-<p><a href="src/i-ve-lost-my-comment.tar.xz">Fichier fourni : <code>i-ve-lost-my-comment.tar.xz</code></a></p>
+<p>Fichier fourni : <a href="src/i-ve-lost-my-comment.tar.xz"><code>i-ve-lost-my-comment.tar.xz</code></a></p>
 <p>On nous fourni une clé privée OpenSSH et une clé publique corrompue. Comme une clé publique OpenSSH est déterminée par sa clé privée ça ne devrait pas être un problème de la regénérer.</p>
 <p>Et effectivement on trouve l'option <code>-y</code> de <code>ssh-keygen</code> pour ça :</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -3999,7 +3999,7 @@ Apparemment, il est infinissable.</p>
 <p>Est-ce que vous pourrez réussir là où vos parents ont échoué ?</p>
 <p>Pour cette épreuve, vous allez à nouveau trouver une URL, celle-ci contient la dernière étape du prechall. </p>
 </blockquote>
-<p><a href="src/veggie-dino.8xp">Fichier fourni : <code>veggie-dino.8xp</code></a></p>
+<p>Fichier fourni : <a href="src/veggie-dino.8xp"><code>veggie-dino.8xp</code></a></p>
 <p>Cette fois c'est un chall de reverse... mais avec un format de fichier étrange <img alt="😬" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f62c.svg" title=":grimacing:" /> :</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>file veggie-dino.8xp 
@@ -4031,9 +4031,9 @@ veggie-dino.8xp: TI-83+ Graphing Calculator (assembly program)
 <p>Et c'est parti pour un petit jeu de dino !</p>
 <p><img alt="" src="img/game.png" /></p>
 <p><img alt="" src="img/play.png" /></p>
-<p>Mais pour atteindre $9999$ y'en a pour trop longtemps. Donc on doit trouver comment gagner autrement.</p>
+<p>Mais pour atteindre 9999 y'en a pour trop longtemps. Donc on doit trouver comment gagner autrement.</p>
 <p>J'ai essayé le debugger de TilEm, ça a l'air pas mal mais je pense qu'on peut faire encore mieux !</p>
-<p>Le nombre $9999$ c'est <code>0x270f</code>. Donc on peut regarder dans le fichier si on trouve cette valeur. Et bingo on trouve cette valeur (en little-endian donc <code>0f27</code>) une seule fois. On peut la modifier en <code>0100</code>, donc $1$ en décimal. Et on transfère notre fichier modifié.</p>
+<p>Le nombre 9999 c'est <code>0x270f</code>. Donc on peut regarder dans le fichier si on trouve cette valeur. Et bingo on trouve cette valeur (en little-endian donc <code>0f27</code>) une seule fois. On peut la modifier en <code>0100</code>, donc 1 en décimal. Et on transfère notre fichier modifié.</p>
 <p><img alt="" src="img/prgm_hack.png" /></p>
 <p>A priori rien n'a changé, le score à atteindre en haut est toujours 9999.</p>
 <p><img alt="" src="img/game_hack.png" /></p>
@@ -4046,7 +4046,7 @@ veggie-dino.8xp: TI-83+ Graphing Calculator (assembly program)
 <p>Lorsque vous aurez trouvé le flag contenu dans cette vidéo, soumettez-le dans le formulaire du point de départ du prechall.</p>
 <p>⚠️ Attention, le son peut être fort. </p>
 </blockquote>
-<p><a href="src/oscillart.webm">Fichier fourni : <code>oscillart.webm</code></a></p>
+<p>Fichier fourni : <a href="src/oscillart.webm"><code>oscillart.webm</code></a></p>
 <video controls>
 <source src="src/oscillart.webm" type="video/webm">
 </video>
@@ -4098,7 +4098,7 @@ npm<span class="w"> </span>run<span class="w"> </span>demo
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 12, 2026 16:39:47 UTC">April 12, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 12, 2026 16:46:35 UTC">April 12, 2026</span>
   </span>
 
     
