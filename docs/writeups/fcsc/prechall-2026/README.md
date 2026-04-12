@@ -15,7 +15,7 @@ Just like last year, there are 3 challenges for the teaser, but this time they c
 >
 > For this challenge, you'll find a URL that contains the second step of the prechall. 
 
-[File provided: `i-ve-lost-my-comment.tar.xz`](src/i-ve-lost-my-comment.tar.xz)
+File provided: [`i-ve-lost-my-comment.tar.xz`](src/i-ve-lost-my-comment.tar.xz)
 
 We're provided with an OpenSSH private key and a corrupted public key. Since an OpenSSH public key is determined by its private key, regenerating it shouldn't be a problem.
 
@@ -43,7 +43,7 @@ And we get the complete public key:
 >
 > For this challenge, you'll find another URL; this one contains the final step of the pre-challenge. 
 
-[File provided: `veggie-dino.8xp`](src/veggie-dino.8xp)
+File provided: [`veggie-dino.8xp`](src/veggie-dino.8xp)
 
 This time it's a reverse challenge... but with a weird file format :grimacing: :
 
@@ -96,15 +96,15 @@ And off you go for a little dino game
 
 ![](img/play.png)
 
-But it takes way too long to reach $9999$. So we need to figure out another way to win.
+But it takes way too long to reach 9999. So we need to figure out another way to win.
 
 I tried the TilEm debugger, it looks pretty good, but I think we can do even better!
 
-The number $9999$ is `0x270f`. So we can look in the file to see if we find that value. And bingo—we find that value (in little-endian, so `0f27`) just once. We can change it to `0100`, which is $1$ in decimal. Then we transfer our modified file.
+The number 9999 is `0x270f`. So we can look in the file to see if we find that value. And bingo—we find that value (in little-endian, so `0f27`) just once. We can change it to `0100`, which is 1 in decimal. Then we transfer our modified file.
 
 ![](img/prgm_hack.png)
 
-At first glance, nothing has changed; the target score at the top is still $9999$.
+At first glance, nothing has changed; the target score at the top is still 9999.
 
 ![](img/game_hack.png)
 
@@ -122,7 +122,7 @@ We can finally move on to Part 3!
 > 
 > ⚠️ Warning: the sound may be loud. 
 
-[File provided: `oscillart.webm`](src/oscillart.webm)
+File provided: [`oscillart.webm`](src/oscillart.webm)
 
 <video controls>
 <source src="src/oscillart.webm" type="video/webm">
@@ -180,7 +180,7 @@ Comme l'année dernière, il y a 3 challenges pour le teasing mais cette fois-ci
 >
 > Pour cette épreuve, vous allez trouver une URL, celle-ci contient la deuxième étape du prechall. 
 
-[Fichier fourni : `i-ve-lost-my-comment.tar.xz`](src/i-ve-lost-my-comment.tar.xz)
+Fichier fourni : [`i-ve-lost-my-comment.tar.xz`](src/i-ve-lost-my-comment.tar.xz)
 
 On nous fourni une clé privée OpenSSH et une clé publique corrompue. Comme une clé publique OpenSSH est déterminée par sa clé privée ça ne devrait pas être un problème de la regénérer.
 
@@ -208,7 +208,7 @@ Et on trouve obtient la clé publique au complet :
 >
 > Pour cette épreuve, vous allez à nouveau trouver une URL, celle-ci contient la dernière étape du prechall. 
 
-[Fichier fourni : `veggie-dino.8xp`](src/veggie-dino.8xp)
+Fichier fourni : [`veggie-dino.8xp`](src/veggie-dino.8xp)
 
 Cette fois c'est un chall de reverse... mais avec un format de fichier étrange :grimacing: :
 
@@ -261,11 +261,11 @@ Et c'est parti pour un petit jeu de dino !
 
 ![](img/play.png)
 
-Mais pour atteindre $9999$ y'en a pour trop longtemps. Donc on doit trouver comment gagner autrement.
+Mais pour atteindre 9999 y'en a pour trop longtemps. Donc on doit trouver comment gagner autrement.
 
 J'ai essayé le debugger de TilEm, ça a l'air pas mal mais je pense qu'on peut faire encore mieux !
 
-Le nombre $9999$ c'est `0x270f`. Donc on peut regarder dans le fichier si on trouve cette valeur. Et bingo on trouve cette valeur (en little-endian donc `0f27`) une seule fois. On peut la modifier en `0100`, donc $1$ en décimal. Et on transfère notre fichier modifié.
+Le nombre 9999 c'est `0x270f`. Donc on peut regarder dans le fichier si on trouve cette valeur. Et bingo on trouve cette valeur (en little-endian donc `0f27`) une seule fois. On peut la modifier en `0100`, donc 1 en décimal. Et on transfère notre fichier modifié.
 
 ![](img/prgm_hack.png)
 
@@ -288,7 +288,7 @@ On peut enfin passer à la partie 3 !
 > 
 > ⚠️ Attention, le son peut être fort. 
 
-[Fichier fourni : `oscillart.webm`](src/oscillart.webm)
+Fichier fourni : [`oscillart.webm`](src/oscillart.webm)
 
 <video controls>
 <source src="src/oscillart.webm" type="video/webm">
