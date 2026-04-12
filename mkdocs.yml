@@ -88,7 +88,7 @@ nav:
       - Layer Cake: writeups/fcsc/layer-cake/README.md
       - Meme Generator: writeups/fcsc/meme-generator/README.md
       - CryptoLocker v1: writeups/fcsc/cryptolocker-v1/README.md
-      - Prechall FCSC 2026: writeups/fcsc/prechall-2026/README.md
+      - Prechall 2026: writeups/fcsc/prechall-2026/README.md
     - UnitedCTF:
       - writeups/unitedctf/README.md
       - ARPacadabra: writeups/unitedctf/arpacadabra/README.md
