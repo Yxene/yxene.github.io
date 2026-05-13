@@ -3877,7 +3877,7 @@ Unfortunately, the comment associated with the public key has been lost.</p>
 <p>We're provided with an OpenSSH private key and a corrupted public key. Since an OpenSSH public key is determined by its private key, regenerating it shouldn't be a problem.</p>
 <p>And indeed, we find the <code>-y</code> option of <code>ssh-keygen</code> for this purpose:</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>-y        This option will read a private OpenSSH format file
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>-y      This option will read a private OpenSSH format file
         and print an OpenSSH public key to stdout.
 </code></pre></div></td></tr></table></div>
 <p>So we use the following command:</p>
@@ -3901,7 +3901,7 @@ veggie-dino.8xp: TI-83+ Graphing Calculator (assembly program)
 </code></pre></div></td></tr></table></div>
 <p>It's an assembly program for the TI-83+.</p>
 <p>I still have painful memories of my failed static analysis of <a href="https://hackropole.fr/fr/challenges/reverse/fcsc2024-reverse-chrominausor/">Chrominausor</a>, so we'll try dynamic analysis instead.</p>
-<p><img alt="PTSD Chihuahua meme - When I remember static analysis of Chrominausor" src="img/ptsd_fr.jpg" /></p>
+<p><img alt="PTSD Chihuahua meme - When I remember static analysis of Chrominausor" src="img/ptsd_en.jpg" /></p>
 <p>For this, we'll need a TI-83+ emulator.</p>
 <p>After doing some research, the best option on Linux for this is <a href="http://lpg.ticalc.org/prj_tilem/index.html">TilEm</a>.</p>
 <p>After several hours of struggling, I managed to install it! First, you need a bunch of special libraries (notably <a href="https://github.com/debrouxl/tilp_and_gfm">TILP</a>):</p>
@@ -3920,14 +3920,14 @@ veggie-dino.8xp: TI-83+ Graphing Calculator (assembly program)
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Asm(prgmDINO)
 </code></pre></div></td></tr></table></div>
 <p><img alt="" src="img/prgm.png" /></p>
-<p>Next, enter its name:</p>
+<p>Next, enter your name:</p>
 <p><img alt="" src="img/name.png" /></p>
 <p>And off you go for a little dino game </p>
 <p><img alt="" src="img/game.png" /></p>
 <p><img alt="" src="img/play.png" /></p>
 <p>But it takes way too long to reach 9999. So we need to figure out another way to win.</p>
 <p>I tried the TilEm debugger, it looks pretty good, but I think we can do even better!</p>
-<p>The number 9999 is <code>0x270f</code>. So we can look in the file to see if we find that value. And bingo—we find that value (in little-endian, so <code>0f27</code>) just once. We can change it to <code>0100</code>, which is 1 in decimal. Then we transfer our modified file.</p>
+<p>The number 9999 is <code>0x270f</code>. So we can look in the file to see if we find that value. And bingo! We find that value (in little-endian, so <code>0f27</code>) just once. We can change it to <code>0100</code>, which is 1 in decimal. Then we transfer our modified file.</p>
 <p><img alt="" src="img/prgm_hack.png" /></p>
 <p>At first glance, nothing has changed; the target score at the top is still 9999.</p>
 <p><img alt="" src="img/game_hack.png" /></p>
@@ -4098,7 +4098,7 @@ npm<span class="w"> </span>run<span class="w"> </span>demo
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 12, 2026 16:46:35 UTC">April 12, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 13, 2026 16:28:42 UTC">May 13, 2026</span>
   </span>
 
     
