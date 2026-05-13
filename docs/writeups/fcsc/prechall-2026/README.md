@@ -21,7 +21,7 @@ We're provided with an OpenSSH private key and a corrupted public key. Since an 
 
 And indeed, we find the `-y` option of `ssh-keygen` for this purpose:
 
-    -y        This option will read a private OpenSSH format file
+    -y      This option will read a private OpenSSH format file
             and print an OpenSSH public key to stdout.
 
 So we use the following command:
@@ -56,7 +56,7 @@ It's an assembly program for the TI-83+.
 
 I still have painful memories of my failed static analysis of [Chrominausor](https://hackropole.fr/fr/challenges/reverse/fcsc2024-reverse-chrominausor/), so we'll try dynamic analysis instead.
 
-![PTSD Chihuahua meme - When I remember static analysis of Chrominausor](img/ptsd_fr.jpg)
+![PTSD Chihuahua meme - When I remember static analysis of Chrominausor](img/ptsd_en.jpg)
 
 For this, we'll need a TI-83+ emulator.
 
@@ -86,7 +86,7 @@ And since it's compiled Z80 code, you need to use the `Asm` function:
 
 ![](img/prgm.png)
 
-Next, enter its name:
+Next, enter your name:
 
 ![](img/name.png)
 
@@ -100,7 +100,7 @@ But it takes way too long to reach 9999. So we need to figure out another way to
 
 I tried the TilEm debugger, it looks pretty good, but I think we can do even better!
 
-The number 9999 is `0x270f`. So we can look in the file to see if we find that value. And bingo—we find that value (in little-endian, so `0f27`) just once. We can change it to `0100`, which is 1 in decimal. Then we transfer our modified file.
+The number 9999 is `0x270f`. So we can look in the file to see if we find that value. And bingo! We find that value (in little-endian, so `0f27`) just once. We can change it to `0100`, which is 1 in decimal. Then we transfer our modified file.
 
 ![](img/prgm_hack.png)
 
@@ -186,8 +186,8 @@ On nous fourni une clé privée OpenSSH et une clé publique corrompue. Comme un
 
 Et effectivement on trouve l'option `-y` de `ssh-keygen` pour ça :
 
-	-y		This option will read a private OpenSSH format file
-			and print an OpenSSH public key to stdout.
+    -y      This option will read a private OpenSSH format file
+            and print an OpenSSH public key to stdout.
 
 Donc on utilise la commande suivante :
 
